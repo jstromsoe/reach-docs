@@ -1,54 +1,54 @@
 site_name: Emlid
-theme: docstheme
+theme: readthedocs
 site_favicon: favicon.ico
 repo_url: https://github.com/emlid/Docs
 pages:
-- Top : 'index.md'
+- Introduction: index.md
 - Navio:   
   - Navio APM:
-    - 'Hardware setup Navio+': 'Navio/Navio-APM/hardware-setup-navio-plus.md'
-    - 'Hardware setup Navio': 'Navio/Navio-APM/hardware-setup-navio.md'
-    - 'Configuring Raspberry Pi': 'Navio/Navio-APM/configuring-raspberry-pi.md'
-    - 'APM installation and running' : 'Navio/Navio-APM/installation-and-running.md'
-    - 'Video Streaming': 'Navio/Navio-APM/video-streaming.md'
-    - 'Building from sources': 'Navio/Navio-APM/building-from-sources.md'
+    - Hardware setup Navio+: Navio/Navio-APM/hardware-setup-navio-plus.md
+    - Hardware setup Navio: Navio/Navio-APM/hardware-setup-navio.md
+    - Configuring Raspberry Pi: Navio/Navio-APM/configuring-raspberry-pi.md
+    - APM installation and running : Navio/Navio-APM/installation-and-running.md
+    - Video Streaming: Navio/Navio-APM/video-streaming.md
+    - Building from sources: Navio/Navio-APM/building-from-sources.md
   - Downloads:
-    - 'Real-time Linux for RPi1/2' : 'Navio/Downloads/Real-time-Linux-RPi2.md'
-    - 'APM binaries': 'Navio/Downloads/APM-binaries.md'
-    - 'Windows IoT': 'Navio/Downloads/Windows-IoT.md'
+    - Real-time Linux for RPi1/2 : Navio/Downloads/Real-time-Linux-RPi2.md
+    - APM binaries: Navio/Downloads/APM-binaries.md
+    - Windows IoT: Navio/Downloads/Windows-IoT.md
   - Navio for developers:
-    - '9DOF IMU': 'Navio/Navio-dev/mpu9250-imu.md'
-    - 'AHRS' : 'Navio/Navio-dev/AHRS.md'
-    - 'Barometer' : 'Navio/Navio-dev/ms5611-barometer.md'
-    - 'GPS' : 'Navio/Navio-dev/read-gps-data.md'
-    - 'U-center GPS' : 'Navio/Navio-dev/GPS-ucenter.md'
-    - 'Servos and RGB LED' : 'Navio/Navio-dev/servo-and-rgb-led.md'
-    - 'PPM RC input' : 'Navio/Navio-dev/rc-input.md'
-    - 'ADC' : 'Navio/Navio-dev/ads1115-adc.md'
-    - 'FRAM' : 'Navio/Navio-dev/mb85r-fram.md'
-    - 'Navio Raw RTKLib' : 'Navio/Navio-dev/rtklib.md'
-    - 'Using default Raspbian' : 'Navio/Navio-dev/using-default-raspbian.md'
-    - 'Datasheets' : 'Navio/Navio-dev/datasheets.md'
-    - 'Windows IoT': 'Navio/Navio-dev/Windows-IoT.md'
+    - 9DOF IMU: Navio/Navio-dev/mpu9250-imu.md
+    - AHRS : Navio/Navio-dev/AHRS.md
+    - Barometer : Navio/Navio-dev/ms5611-barometer.md
+    - GPS : Navio/Navio-dev/read-gps-data.md
+    - U-center GPS : Navio/Navio-dev/GPS-ucenter.md
+    - Servos and RGB LED : Navio/Navio-dev/servo-and-rgb-led.md
+    - PPM RC input : Navio/Navio-dev/rc-input.md
+    - ADC : Navio/Navio-dev/ads1115-adc.md
+    - FRAM : Navio/Navio-dev/mb85r-fram.md
+    - Navio Raw RTKLib : Navio/Navio-dev/rtklib.md
+    - Using default Raspbian : Navio/Navio-dev/using-default-raspbian.md
+    - Datasheets : Navio/Navio-dev/datasheets.md
+    - Windows IoT: Navio/Navio-dev/Windows-IoT.md
   - RTK with NEO6-T:
-    - 'Rtklib base setup' : 'Navio/RTKLIB/rtklib-base-setup.md'
-    - 'Rtklib rover setup' : 'Navio/RTKLIB/rtklib-rover-setup.md'
-    - 'RTKGPS+' : 'Navio/RTKLIB/RTKGPS+.md'
+    - Rtklib base setup : Navio/RTKLIB/rtklib-base-setup.md
+    - Rtklib rover setup : Navio/RTKLIB/rtklib-rover-setup.md
+    - RTKGPS+ : Navio/RTKLIB/RTKGPS+.md
 - Reach:
-  - Introduction: 'Reach/introduction/introduction.md'
-  - Roadmap: 'Reach/roadmap/roadmap.md'
-  - Kit contents: 'Reach/kit-contents/kit-contents.md'
-  - Quickstart: 'Reach/quickstart/quickstart.md'
-  - Power supply: 'Reach/power-supply/power-supply.md'
-  - Antenna placement: 'Reach/antenna-placement/antenna-placement.md'
-  - ReachView app: 'Reach/reachview-app/reachview-app.md'
-  - Hardware connection: 'Reach/hardware-connection/hardware-connection.md'
-  - GPS post-processing: 'Reach/gps-post-processing/gps-post-processing.md'
-  - PylonGPS: 'Reach/pylongps/pylongps.md'
-  - Firmware update: 'Reach/firmware-update/firmware-update.md'
-  - Electrical specs: 'Reach/electrical-specs/electrical-specs.md'
-  - Mechanical specs: 'Reach/mechanical-specs/mechanical-specs.md'
-  - Software development: 'Reach/software-development/software-development.md'
-  - Troubleshooting: 'Reach/troubleshooting/troubleshooting.md'
-  - FAQ: 'Reach/faq/faq.md'
+  - Introduction: Reach/introduction/introduction.md
+  - Roadmap: Reach/roadmap/roadmap.md
+  - Kit contents: Reach/kit-contents/kit-contents.md 
+  - Quickstart: Reach/quickstart/quickstart.md
+  - Power supply: Reach/power-supply/power-supply.md
+  - Antenna placement: Reach/antenna-placement/antenna-placement.md
+  - ReachView app: Reach/reachview-app/reachview-app.md
+  - Hardware connection: Reach/hardware-connection/hardware-connection.md
+  - GPS post-processing: Reach/gps-post-processing/gps-post-processing.md
+  - PylonGPS: Reach/pylongps/pylongps.md
+  - Firmware update: Reach/firmware-update/firmware-update.md
+  - Electrical specs: Reach/electrical-specs/electrical-specs.md
+  - Mechanical specs: Reach/mechanical-specs/mechanical-specs.md
+  - Software development: Reach/software-development/software-development.md
+  - Troubleshooting: Reach/troubleshooting/troubleshooting.md
+  - FAQ: Reach/faq/faq.md
 
