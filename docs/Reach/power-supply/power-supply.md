@@ -1,0 +1,25 @@
+### Power supply
+
+Emlid Reach RTK module can be powered using Micro-USB port or DF13 ports. Power circuit is shared for all ports, so when you power the device over one port it will pass power to other ports.
+
+**IMPORTANT**
+
+Do not plug two power supplies at the same time as it may damage the device.
+
+#### Power supply over USB
+
+You can power Reach over Micro-USB cable using power supplies like:
+
+1) Power bank
+
+2) USB wall adapter
+
+3) Computer USB ports
+
+When you power Reach over Micro-USB port it can then provide power to devices connected to DF13 ports (e.g. radios).
+
+#### Powering using DF13 ports
+
+Reach can be powered by providing 5 Volts to 5V pin on one of the two DF13 ports.
+
+When Reach is powered over DF13 port it will pass power to devices connected to Micro-USB OTG port such as flash drives, 3G\4G modems, USB radios etc.
