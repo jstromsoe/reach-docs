@@ -1,18 +1,19 @@
-####Dimensions
+#### Dimensions
 
-Reach is a tiny device, it is only a few millimeters larger than Intel Edison that it houses.
+Reach RTK module is a tiny device, it is only a few millimeters larger than Intel Edison that it houses.
 
+| Dimension | Length | Width | Height |   
+|-----------|--------|-------|--------|
+| Size (mm) |  45.5  |   27  |   9.2  |
 
-Length: 45.5mm
-
-Width: 27mm
-
-Height: 9.2mm
-
-Weight: 14g
 ![image](reach-top-view.png)
 
-####Connectors mating parts
+#### Weight
+
+Weight of Reach is 14 grams.
+
+#### Connectors mating parts
+
 Reach has dual DF13 connectors and comes with all required cables to connect to other devices. In case you would like to make you own cable assembly here are the appropriate connector part numbers:
 
 * On Reach: Hirose DF13-6P-1.25H(50) ([Digikey](http://www.digikey.com/product-detail/en/DF13-6P-1.25H%2850%29/H3354-ND/530653), [Mouser](http://eu.mouser.com/ProductDetail/Hirose-Electric/DF13-6P-125H50/?qs=%2fha2pyFaduilOJdMONLaLBwaFNH0V7VnzXasUV9hMRidfNFMCnSnIA%3d%3d)).
@@ -23,12 +24,10 @@ Antenna connector is MCX, to connect to SMA or TNC antenna cable you can use one
 
 ![image](sma-mcx-cable.jpg)![image](sma-mcx-adapter.jpg)
 
-####3D model
+#### 3D model
 
-This 3D model can be used as a reference for case design. Please note that Reach comes in protective hetshrink that increases its outer dimensions slightly.
+This 3D model can be used as a reference for case design. Please note that Reach comes in protective heatshrink that increases its outer dimensions slightly.
 
 <script src="https://embed.github.com/view/3d/emlid/hardware/master/Reach.STL"></script>
 
-During case design keep in mind that you should not place anything close to the Wi-Fi antenna or performance might be degraded. Try to leave at least 5mm of distance to the closest object. 
-
-
+During case design keep in mind that you should not place anything close to the Wi-Fi antenna or performance might be degraded. Try to leave at least 5mm of distance to the closest object.
