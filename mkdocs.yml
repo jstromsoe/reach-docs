@@ -4,7 +4,7 @@ site_favicon: favicon.ico
 repo_url: https://github.com/emlid/Docs
 pages:
 - Introduction: index.md
-- Navio:
+- Navio:   
   - Navio APM:
     - Hardware setup Navio+: Navio/Navio-APM/hardware-setup-navio-plus.md
     - Hardware setup Navio: Navio/Navio-APM/hardware-setup-navio.md
@@ -51,3 +51,4 @@ pages:
   - Software development: Reach/software-development/software-development.md
   - Troubleshooting: Reach/troubleshooting/troubleshooting.md
   - FAQ: Reach/faq/faq.md
+
