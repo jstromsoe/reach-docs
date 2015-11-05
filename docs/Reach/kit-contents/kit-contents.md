@@ -1,13 +1,31 @@
 ### Kit contents
 
-Reach RTK modules are shipped in cardboard boxes in which you can find the following items:
+#### Reach RTK kit
 
-1) Reach RTK module
+Reach RTK kits include the following:
 
-2) DF13 <-> DF13 straight cable
+* 2x Reach RTK module
 
-3) DF13 <-> jumper wires cable
+* 2x Tallysman TW4721 antenna with adhesive mount
 
-4) Micro-USB <-> USB cable
+* 2x DF13 <-> DF13 straight cable
 
-5) Micro-USB <-> USB-F OTG cable
+* 2x DF13 <-> jumper wires cable
+
+* 2x Micro-USB <-> USB cable
+
+* 2x Micro-USB <-> USB-F OTG cable
+
+#### Standalone Reach unit
+
+Standalone Reach units come with the following:
+
+* Reach RTK module
+
+* DF13 <-> DF13 straight cable
+
+* DF13 <-> jumper wires cable
+
+* Micro-USB <-> USB cable
+
+* Micro-USB <-> USB-F OTG cable
