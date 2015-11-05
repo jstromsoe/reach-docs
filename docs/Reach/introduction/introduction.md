@@ -1,6 +1,14 @@
 ### Introduction
 
-#### What is RTK
+#### What is Reach and what is it for?
+
+Reach is an RTK GNSS receiver for applications when your standard GPS with several meters accuracy just won’t cut it. It relies on RTK (real-time kinematics) technology to deliver centimeter level accuracy.
+
+RTK was here for a long time, used mostly by surveyors and unaffordable to hobbyists and makers. If you needed centimeter precise positioning you had to spend thousands of dollars on an RTK system. With Reach we want to change that.
+
+Reach runs open-source RTK processing software called RTKLIB written by Tomoji Takasu. Previously a computer was required to run RTKLIB, but now all RTKLIB features are available directly on Reach.
+
+#### What is an RTK?
 
 RTK is a technique used to improve the accuracy of gps system. Traditional GPS receivers, like one you can find in your smartphone, or on most robotic platforms could only determine  their position with 2-4 meters accuracy. RTK can give you centimeters.
 
@@ -14,3 +22,13 @@ There are GPS augmentation systems (DGPS), like SBAS or WAAS that measure curren
 The technology that would let us do it is called RTK (real-time kinematics). Two receivers are used, one of them is stationary and is called “base station”, the other one is “rover”. The base station measures errors, and knowing that it is stationary transmits corrections to the rover. The idea is simple, but not the math. Commercial systems could be subcentimeter precise and would cost you a fortune($5k+).
 
 Also, if you do not need the precise coordinates in real-time, you can just record the data from the rover and the base and process it afterwards thus eliminating need in constant radiolink. This method is called post processing and is the most precise among all.
+
+** Comparison of RTK and standalone coordinates **
+
+*Static mode:*
+
+![image](reach-static-rtk-demo.png)
+
+*Kinematic mode:*
+
+![image](reach-kinematic-rtk-demo.png)
