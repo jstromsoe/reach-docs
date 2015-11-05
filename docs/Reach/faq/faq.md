@@ -3,7 +3,7 @@
 #### How accurate the coordinates of Reach RTK are?
 
 If you have a base station with known coordinates and a good antenna, you can
-expect accuracy horizontal accuracy down to 1-2cm and vertical down to 2-4cm.
+expect accuracy horizontal down to 1-2cm and vertical down accuracy to 2-4cm.
 
 #### Will I always get cm coordinates?
 
