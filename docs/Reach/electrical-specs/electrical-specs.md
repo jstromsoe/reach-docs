@@ -1,4 +1,6 @@
-####Maximum ratings
+### Electrical specs
+
+#### Maximum ratings
 
 |Name           | Value|
 |---------------
@@ -12,11 +14,11 @@
 |Current limit on USB OTG | 1000 mA|
 |Temperature range| -40 +85 C|
 
-* Note that Intel Edison is rated 0C to 40C, but that does not mean that it will stop working at lower temperatures. Users report test successful down to -40 C. Intel also claims they are performing temperature tests with good results, but are not yet ready to officially rate Edison as extended temperature range device. 
+* Note that Intel Edison is rated 0C to 40C, but that does not mean that it will stop working at lower temperatures. Users report test successful down to -40 C. Intel also claims they are performing temperature tests with good results, but are not yet ready to officially rate Edison as extended temperature range device.
 
 
 
-####Connectors pinout
+#### Connectors pinout
 ![image](reach-connectors.png)
 
 * GPIO46, GPIO77, PWM, SCL, SDA, TX, RX are connected to Intel Edison via buffers and are 3.3 V logic level, 5 V tolerant.
@@ -25,17 +27,6 @@
 * PWM belongs to PWM3 GPIO183 on Intel Edison
 * Time Mark input is connected directly to U-blox chip for low latency, it includes an over-voltage clamp, pull up and current limiting resistor.
 
-####USB OTG
+#### USB OTG
 
 Reach can both receive power from USB, acting as a device and source power to the port acting as a host. To use Reach in OTG mode you will need to connect 5V power source to DF13 connector pins (5 V, GND) and use OTG USB cable.
-
-
-
-
-
-
-
-
-
-
-

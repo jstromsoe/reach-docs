@@ -1,3 +1,5 @@
+### Mechanical specs
+
 #### Dimensions
 
 Reach RTK module is a tiny device, it is only a few millimeters larger than Intel Edison that it houses.
