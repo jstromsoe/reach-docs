@@ -4,9 +4,7 @@ Take Micro-USB<-->USB cable that is coming with the package. Plug Micro-USB end 
 
 #### Connecting and placing antenna
 
-Plug antenna cable into MCX socket on Reach.
-Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building.
-There should be no obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
+Plug antenna cable into MCX socket on Reach. Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building. There should be no obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
 
 #### Connecting to Reach
 
@@ -92,7 +90,7 @@ Wait for Float status, then for Fix. LED statuses
 
 ##### Output: logs and solution
 
-Reach supports outputting two types of data: **raw data logs** and processed **solution**. 
+Reach supports outputting two types of data: **raw data logs** and processed **solution**.
 
 **Raw data logs** contain all the messages sent by base and rover receivers. These logs can be used later for post-processing. On the contrary, **solution** is a stream of already processed and enhanced coordinates. Available solution formats include llh, xyz, nmea and enu.
 
