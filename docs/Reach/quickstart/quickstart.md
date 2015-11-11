@@ -83,12 +83,20 @@ Set up a correction stream.
 The solution status value(simply labeled **status** in the grid) is the key value you can see here. After you have started the rover, you will be able to get the following solution statuses(probably in this order):
 
 * **"-"**. This means there is not information for the software to process. Either not enough time has passed or the antenna is poorly placed
-* **single**. Either the rover is started in single mode
+* **single**. This is usually the state that follows **"-"** in RTK mode. **Single** means that rover has found a solution relying on it's own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result
+* **float**. The base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved
+* **fixed**. Positioning is relative to the base and the integer ambiguity is properly resolved. This is as good as it gets, **fix** solution status indicates high level of positioning precision
 
 *TODO*
 Wait for Float status, then for Fix. LED statuses
 
 ##### Output: logs and solution
+
+Reach supports outputting two types of data: **raw data logs** and processed **solution**. 
+
+**Raw data logs** contain all the messages sent by base and rover receivers. These logs can be used later for post-processing. On the contrary, **solution** is a stream of already processed and enhanced coordinates. Available solution formats include llh, xyz, nmea and enu.
+
+By default, all **raw data logs** are saved as files on the device and are available for download on ReachView's **Logs** tabs.
 
 *TODO*
 Logs can be used for post-processing.
