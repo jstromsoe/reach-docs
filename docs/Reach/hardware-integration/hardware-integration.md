@@ -8,17 +8,21 @@ Most radios nowadays use UART or USB as a connection.
 
 ##### Connecting UART radio
 
-Logic level on UART in Reach is 3.3V. Please use only radios only with 3.3V logic level.
-To connect UART radio to Reach use upper DF13 port (the one near the USB).
+<font color="red">DO NOT CONNECT RADIO TO REACH WITH DIRECT DF13 CABLE, IT CAN CAUSE DAMAGE TO THE DEVICES</font>
 
-Connect pins as specified in the following table (mind RX-TX cross):
+Logic level on UART in Reach is 3.3V. Please only use radios  with 3.3V logic level.
+To connect UART radio to Reach use upper DF13 port (the one near the USB).
 
 | Reach pins | Radio pins |
 |:----------:|:----------:|
-|     5V     |     5V     |
+|     +5V    |     +5V    |
 |     TX     |     RX     |
 |     RX     |     TX     |
 |     GND    |     GND    |
+
+Connection diagram for 3DR Radio v2:
+
+![image](reach-3dr-radio.png)
 
 UART radio is accessible on Reach as a serial device with the name **ttyMFD2**
 
