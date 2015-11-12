@@ -34,17 +34,19 @@ Default **reach** user's home directory contains following directories:
 * **logs** directory is the default path for storing RTKLIB output and raw data logs
 * A hidden **.reach** directory that a save file **rtk_state**
 
-<font color="red">It is very important not to change anything in these directories, as the software relies on the current structure.</font>
+<font color="red">It is very important not to change anything in these directories, as the software relies on the created directory structure.</font>
 
 #### Working with RTKLIB without ReachView
 
 If you wish, you can disable ReachView by disabling the start-up service called **reach-setup**. To do this, run `sudo systemctl disable reach-setup.service`. However, this will also disable the WiFi setup.
 
-The main workflow for working with RTKLIB is the same as with any other Linux platform
+The main workflow for working with RTKLIB is the same as with any other Linux platform.
+
+Most of the information is laid out in [RTKLIB docs](http://www.rtklib.com/rtklib_document.htm).
 
 ###### Setting up Rover
 
-To use Rover mode, you need to run **rtkrcv** binary located inside `/home/reach/RTKLIB/app/rtkrcv/gcc/`
+To use Rover mode, you need to run **rtkrcv** binary located inside `/home/reach/RTKLIB/app/rtkrcv/gcc/`.
 
 **Rtkrcv** relies on configuration files usually stored in `/home/reach/RTKLIB/app/rtkrcv/`.
 You can find a couple of Reach-ready **rtkrcv** configuration files for reference inside `/home/reach/ReachView/rtklib_configs`.
@@ -53,6 +55,22 @@ To load a configuration file, you can either `load` it after running the binary,
 
 ###### Setting up Base
 
+Base is mode is represented by **str2str** binary inside `/home/reach/RTKLIB/app/str2str/gcc/`.
+
+**Str2str** does not use configuration files and is configured by command line options. Important options include:
+
+* **-in** specifies the output stream
+* **-out** specifies the output stream
+* **-p** specifies base coordinates(this is crucial to achieve good results) in llh format
+* **-c** specifies receiver command file. Used to enable and disable certain receiver messages and their frequencies. You can use of the files provided in `/home/reach/ReachView/rtklib_configs`.
+
+An example of running **str2str** on Reach:
+
+`/home/reach/RTKLIB/app/str2str/gcc/str2str -in serial://ttyMFD1:230400:8:n:1:off#ubx -out tcpsvr://:9000#rtcm3 -msg 1002,1006,1013,1019 -p 60 30 50 -c /home/reach/RTKLIB/app/rtkrcv/reach_raw.cmd`
+
+This starts a stream, capturing a UART stream in u-blox format from onboard GPS receiver and listening for connections on TCP port 9000. The output stream is in **RTCM3** format(RTKLIB only supports this output format). Messages used for output are 1002, 1006, 1013, 1019. Base latitude is 60, longitude 30, height 50. **reach_raw.cmd** file turns off default NMEA messages and turns on UBX-RAWX, UBX-SFRBX, UBX-TIM-TM2 messages and sets the frequency to 10 Hz.
+
+Note that by default, after a power cycle, u-blox sends data on a 9600 baudrate. ReachView changes this to 230400. So, if you turned off ReachView service, u-blox will probably configured to use 9600 baudrate.
 
 
 
