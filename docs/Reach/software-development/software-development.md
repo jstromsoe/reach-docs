@@ -62,7 +62,7 @@ The back-end is written in Python. It uses [**pexpect**](http://pexpect.readthed
 
 The front-end is the primary user interface for both ReachView and Reach. The intended use includes changing RTKLIB settings on Reach device, monitoring satellite levels for better antenna placement, monitoring solution status. It also allows to download logs, in case they were stored on the device.  
 
-The front-end is built using [**jQuery**](https://jquery.com), [**Socket.IO**](http://socket.io) and [**jQuery Mobile**](https://jquerymobile.com) as a UI element framework. 
+The front-end is built using [**jQuery**](https://jquery.com), [**Socket.IO**](http://socket.io) and [**jQuery Mobile**](https://jquerymobile.com) as a UI element framework.
 
 #### Working with RTKLIB without ReachView
 
@@ -98,4 +98,4 @@ An example of running **str2str** on Reach:
 
 This starts a stream, capturing a UART stream in u-blox format from onboard GPS receiver and listening for connections on TCP port 9000. The output stream is in **RTCM3** format(RTKLIB only supports this output format). Messages used for output are 1002, 1006, 1013, 1019. Base latitude is 60, longitude 30, height 50. **reach_raw.cmd** file turns off default NMEA messages and turns on UBX-RAWX, UBX-SFRBX, UBX-TIM-TM2 messages and sets the frequency to 10 Hz.
 
-Note that by default, after a power cycle, u-blox sends data on a 9600 baud rate. ReachView changes this to 230400. So, if you turned off ReachView service, u-blox will probably configured to use 9600 baud rate.
+Note that by default, after a power cycle, u-blox sends data on a 9600 baud rate. ReachView changes this to 230400. So, if you turned off **reach-setup** service that launches ReachView on boot, u-blox will be configured to use 9600 baud rate.
