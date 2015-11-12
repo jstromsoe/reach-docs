@@ -11,7 +11,7 @@ No RTK receiver will provide fixed solution all the time. RTK technology has
 some requirements to work properly such as good GPS reception, high quality
 antenna and low EMI. Bad weather conditions might also degrade solution quality.
 
-#### Why is it so cheap compared to Topcon, Novatel, Javad, Trimble, etc.?   
+#### Why is it so cheap compared to Topcon, Novatel, Javad, Trimble, etc.?
 
 These companies are making industrial equipment and use custom components which
 leads to a corresponding price level. We rely on off-the-shelf electronic
