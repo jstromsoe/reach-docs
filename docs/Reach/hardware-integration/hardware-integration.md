@@ -1,4 +1,4 @@
-### Hardware INTEGRATION
+### Hardware integration
 
 #### Radio
 
@@ -8,9 +8,10 @@ Most radios nowadays use UART or USB as a connection.
 
 ##### Connecting UART radio
 
-<font color="red">DO NOT CONNECT RADIO TO REACH WITH DIRECT DF13 CABLE, IT CAN CAUSE DAMAGE TO THE DEVICES</font>
+Logic level on UART in Reach is 3.3V but pins are 5V tolerant, so you can use both 3.3V and 5V logic level radios.
 
-Logic level on UART in Reach is 3.3V. Please only use radios  with 3.3V logic level.
+UART radio is accessible on Reach as a serial device with the name **ttyMFD2**
+
 To connect UART radio to Reach use upper DF13 port (the one near the USB).
 
 | Reach pins | Radio pins |
@@ -20,11 +21,23 @@ To connect UART radio to Reach use upper DF13 port (the one near the USB).
 |     RX     |     TX     |
 |     GND    |     GND    |
 
+###### 3DR Radio
+
+<font color="red">DO NOT CONNECT 3DR RADIO TO REACH WITH DF13-TO-DF13 CABLE FROM THE PACKAGE, IT CAN CAUSE DAMAGE TO THE RADIO.</font>
+
 Connection diagram for 3DR Radio v2:
 
 ![image](reach-3dr-radio.png)
 
-UART radio is accessible on Reach as a serial device with the name **ttyMFD2**
+3DR Radio can also be connected over USB.
+
+###### RFD900 Radio
+
+Connection diagram for RFD900 radio:
+
+![image](reach-rfd900-radio.png)
+
+Please mind that RFD can consume up to 800ma in peaks so make sure that your power source can provide enough power for both Reach and RFD900.
 
 ##### Connecting USB radio
 
