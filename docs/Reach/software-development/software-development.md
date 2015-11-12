@@ -36,6 +36,34 @@ Default **reach** user's home directory contains following directories:
 
 <font color="red">It is very important not to change anything in these directories, as the software relies on the created directory structure.</font>
 
+#### Software structure
+
+Software powering Reach can be divided in three different parts:
+
+1. RTKLIB. Takes care of all navigation-related issues
+2. ReachView back-end. A set of scripts aimed at automating work with RTKLIB and extracting useful information
+3. ReachView front-end. Provides an interface to visualize this information and tweak RTKLIB settings
+
+##### RTKLIB
+
+[RTKLIB](http://www.rtklib.com) is written by Tomoji Takasu and distributed under BSD 2-clause license.
+
+RTKLIB consists of multiple programs with different goals. For example, **rtkrcv** is used for immediate GPS data processing, including Real Time Kinematics. **Str2str** is used for the base mode to direct and split receiver stream. **Convbin** can convert navigation data from and to different formats.
+
+RTKLIB was chosen as the data processing engine for Reach because it is widely used, open source, reliable and highly portable.
+
+##### ReachView back-end
+
+As stated above, the back-end is focused on automating work with RTKLIB. This includes switching modes(Rover/Base) and running corresponding binaries, extracting status info from the binaries, editing configuration files and mirroring all this to the front-end.
+
+The back-end is written in Python. It uses [**pexpect**](http://pexpect.readthedocs.org/en/stable/) library to automate working with RTKLIB and [**Flask-SocketIO**](https://flask-socketio.readthedocs.org/en/latest/) framework for communicating with the front-end.
+
+##### ReachView front-end
+
+The front-end is the primary user interface for both ReachView and Reach. The intended use includes changing RTKLIB settings on Reach device, monitoring satellite levels for better antenna placement, monitoring solution status. It also allows to download logs, in case they were stored on the device.  
+
+The front-end is built using [**jQuery**](https://jquery.com), [**Socket.IO**](http://socket.io) and [**jQuery Mobile**](https://jquerymobile.com) as a UI element framework. 
+
 #### Working with RTKLIB without ReachView
 
 If you wish, you can disable ReachView by disabling the start-up service called **reach-setup**. To do this, run `sudo systemctl disable reach-setup.service`. However, this will also disable the WiFi setup.
@@ -70,13 +98,4 @@ An example of running **str2str** on Reach:
 
 This starts a stream, capturing a UART stream in u-blox format from onboard GPS receiver and listening for connections on TCP port 9000. The output stream is in **RTCM3** format(RTKLIB only supports this output format). Messages used for output are 1002, 1006, 1013, 1019. Base latitude is 60, longitude 30, height 50. **reach_raw.cmd** file turns off default NMEA messages and turns on UBX-RAWX, UBX-SFRBX, UBX-TIM-TM2 messages and sets the frequency to 10 Hz.
 
-Note that by default, after a power cycle, u-blox sends data on a 9600 baudrate. ReachView changes this to 230400. So, if you turned off ReachView service, u-blox will probably configured to use 9600 baudrate.
-
-
-
-
-
-
-
-
-
+Note that by default, after a power cycle, u-blox sends data on a 9600 baud rate. ReachView changes this to 230400. So, if you turned off ReachView service, u-blox will probably configured to use 9600 baud rate.
