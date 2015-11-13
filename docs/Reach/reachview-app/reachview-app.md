@@ -55,6 +55,8 @@ ReachView consists of three main tabs: **Status**, **Config**, **Logs**. Status 
 
 ***It is very important that you perform self-update during your first Reach use.***
 
+##### Updating ReachView
+
 To do this, make sure Reach is connected to a Wi-Fi network with Internet access. Go to the Logs page and press the **Update** button. ReachView will go inactive for about a minute. To reconnect, close the current tab and try to open ReachView in a new one. It is preferred to use Reach's IP address instead of **reach.local** to connect after an update.
 
 ![update.png](update.png)
@@ -63,22 +65,36 @@ To do this, make sure Reach is connected to a Wi-Fi network with Internet access
 
 ##### Setting up base station
 
-Navigate to Config tab and choose **Base** mode in the upper selector. Wait for the app to fetch current base settings. The settings include: base coordinates, input stream, output stream and RTCM3 messages to be used. **Input stream** settings must not be changed.
+Navigate to **Config** tab and choose **Base** mode in the upper selector. Wait for the app to fetch current base settings. The settings include: base coordinates, input stream, output stream and RTCM3 messages to be used. **Input stream** settings must not be changed.
 
-Most common settings for **output stream** are:
+###### Base output settings
 
-* TCP server with a specified port
-* Serial connection
-    * To direct the output stream to UART, use **ttyMFD2** device and desired baudrate
-    * To direct to use a USB serial device, use **ttyUSB0**
+Reach in base mode only supports RTCM3 data output.
 
-Note that RTCM3 format is the only one available for base output. **RTCM3 message selector** is used to determine what kind of messages can be sent by the base. More about these messages can be found [here](http://www.geopp.de/rtcm-3-x-message-types/).
+There are several ways to stream it:
 
-*It is very important to set precise **base coordinates** for RTK solution on rover to be valid.*
+* Serial connection. This option is used for two things: UART connection on the [upper DF-13 connector](../hardware-integration/hardware-integration.md) and USB devices with serial protocol, like USB radio
+* File. It is best to specify `/home/reach/logs/filename` path
+* TCP server. Set up a port listening for incoming connections
+* TCP client. Connect to a TCP server
+* Ntrip client.
+* Ntrip server.
 
-When you are done with the settings, hit the **SAVE & LOAD** button. Start the stream with the start button.
+###### Base RTCM3 output messages
 
-*TODO:* Wait for Single solution to appear, set up a coordinate, set up a port.
+A number of output messages is supported, you can find more information about them [here](http://www.geopp.de/rtcm-3-x-message-types/).
+
+###### Base coordinates
+
+**This is a key point in getting good results.** Reach in base mode needs to know it's coordinates. Best practice is setting up base on a well-known position(coordinates determined by RTK) as this directly affects positioning results.
+
+Coordinates are entered in llh format. **By default, if no coordinates were entered, Reach in base mode is configured to wait for single solution, get the coordinates and use them as base's position.** Keep in mind that single positioning mode is far less accurate.
+
+Why are base coordinates so important?
+
+To achieve **good absolute positioning** results on the rover, base needs to know it's position accurately. RTK algorithms calculate a vector pointing from base's location(basically, the coordinates you enter here) to rover. Then, rover's absolute position is determined using this vector and base coordinates. That means that rover's **absolute** position will be just as accurate as the base's **absolute** coordinates.
+
+However, if you are only interested in rover's **relative** position accuracy, you may use a less accurate position for the base.
 
 ##### Setting up rover
 
