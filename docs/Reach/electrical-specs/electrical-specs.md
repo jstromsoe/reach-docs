@@ -2,21 +2,19 @@
 
 #### Maximum ratings
 
-|Name           | Value|
-|---------------
-|Inout voltage on USB and DF13 connectors:| 4.75 - 5.5 V|
-|Logic levels on all pins:| 3.3 V|
-|Max input voltage on all pins: |5.5 V |
-|Antenna DC bias| 3.3 V|
-|Antenna output current| 100 mA|
-|Max current consumption @5V:|500 mA|
-|Normal current consumption @5V:| 200 ma|
-|Current limit on USB OTG | 1000 mA|
-|Temperature range| -40 +85 C|
+|Name                                       | Value                |
+|-------------------------------------------|----------------------|
+| Inout voltage on USB and DF13 connectors  | 4.75 - 5.5 V         |
+| Logic levels on all pins                  | 3.3 V                |
+| Max input voltage on all pins             | 5.5 V                |
+| Antenna DC bias                           | 3.3 V                |
+| Antenna output current                    | 100 mA               |
+| Max current consumption @5V               | 500 mA               |
+| Normal current consumption @5V            | 200 ma               |
+| Current limit on USB OTG                  | 1000 mA              |
+| Temperature range                         | 0 +40 C (-40 +85 C)^ |
 
-* Note that Intel Edison is rated 0C to 40C, but that does not mean that it will stop working at lower temperatures. Users report test successful down to -40 C. Intel also claims they are performing temperature tests with good results, but are not yet ready to officially rate Edison as extended temperature range device.
-
-
+^ Note that Intel Edison is rated 0C to 40C, but that does not mean that it will stop working at lower temperatures. Users report test successful down to -40 C. Intel also claims they are performing temperature tests with good results, but are not yet ready to officially rate Edison as extended temperature range device.
 
 #### Connectors pinout
 ![image](reach-connectors.png)
