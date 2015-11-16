@@ -14,7 +14,7 @@
 | Current limit on USB OTG                  | 1000 mA              |
 | Temperature range                         | 0 +40 C (-40 +85 C)^ |
 
-^ Note that Intel Edison is rated 0C to 40C, but that does not mean that it will stop working at lower temperatures. Users report test successful down to -40 C. Intel also claims they are performing temperature tests with good results, but are not yet ready to officially rate Edison as extended temperature range device.
+^ Officially Intel Edison is rated 0C to 40C, but Intel also claims they are performing temperature tests with good results, but just are not yet ready to officially rate Edison as extended temperature range device. Users report successful tests down to -40 C. 
 
 #### Connectors pinout
 ![image](reach-connectors.png)
