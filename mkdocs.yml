@@ -15,7 +15,7 @@ pages:
   - Hardware integration: Reach/hardware-integration/hardware-integration.md
   - GPS post-processing: Reach/gps-post-processing/gps-post-processing.md
   - PylonGPS: Reach/pylongps/pylongps.md
-  - Firmware reflashing: Reach/firmware-update/firmware-update.md
+  - Firmware reflashing: Reach/firmware-reflashing/firmware-reflashing.md
   - Electrical specs: Reach/electrical-specs/electrical-specs.md
   - Mechanical specs: Reach/mechanical-specs/mechanical-specs.md
   - Software development: Reach/software-development/software-development.md
