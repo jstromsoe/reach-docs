@@ -4,7 +4,7 @@ site_favicon: favicon.ico
 repo_url: https://github.com/emlid/Docs
 pages:
 - Introduction: index.md
-- Navio:   
+- Navio:
   - Navio APM:
     - Hardware setup Navio+: Navio/Navio-APM/hardware-setup-navio-plus.md
     - Hardware setup Navio: Navio/Navio-APM/hardware-setup-navio.md
@@ -37,7 +37,7 @@ pages:
 - Reach:
   - Introduction: Reach/introduction/introduction.md
   - Roadmap: Reach/roadmap/roadmap.md
-  - Kit contents: Reach/kit-contents/kit-contents.md 
+  - Kit contents: Reach/kit-contents/kit-contents.md
   - Quickstart: Reach/quickstart/quickstart.md
   - Power supply: Reach/power-supply/power-supply.md
   - Antenna placement: Reach/antenna-placement/antenna-placement.md
@@ -45,10 +45,9 @@ pages:
   - Hardware integration: Reach/hardware-integration/hardware-integration.md
   - GPS post-processing: Reach/gps-post-processing/gps-post-processing.md
   - PylonGPS: Reach/pylongps/pylongps.md
-  - Firmware update: Reach/firmware-update/firmware-update.md
+  - Firmware reflashing: Reach/firmware-update/firmware-update.md
   - Electrical specs: Reach/electrical-specs/electrical-specs.md
   - Mechanical specs: Reach/mechanical-specs/mechanical-specs.md
   - Software development: Reach/software-development/software-development.md
   - Troubleshooting: Reach/troubleshooting/troubleshooting.md
   - FAQ: Reach/faq/faq.md
-
