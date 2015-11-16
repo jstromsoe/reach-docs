@@ -16,4 +16,6 @@ Electronic devices may produce RF noise that could affect reception of the GPS s
 
 ##### Ground plane
 
-Always place an antenna on a ground plane, it helps to reduce the noise. Ground plane is a piece of metal (copper and aluminum are known to be good) bigger than 70x70mm. It may be a separate piece of metal or a roof of a car or a metal roof of the building.
+Antenna has to be placed on a ground plane which reduces multipath, provides shielding and improves signal reception. Ground plane is a conductive plate, it may be a piece of metal, a roof of a car, a metal roof of a building, etc.
+
+Tallysman TW4721 requires ground plane no less than 70x70mm.
