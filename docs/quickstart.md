@@ -1,6 +1,13 @@
 ### Intro
 
-In this quick tutorial we will show you how to two set up two Reach devices as a base and a rover with corrections sent over Wi-Fi.
+In this quick tutorial we will show you how to two set up two Reach devices as a base and a rover with correction link over Wi-Fi.
+
+<font color="red"> **Please note that this tutorial covers only one of the numerous setup options. To understand how to make a different setup please read the following sections in the docs:** </font>
+
+* [Mechanical specs](mechanical-specs.md)
+* [Electrical specs](electrical-specs.md)
+* [Hardware integration](hardware-integration.md)
+* [ReachView app](reachview-app.md)
 
 ### Powering up
 
@@ -62,4 +69,4 @@ If everything has been set up correctly, you will see changes in the solution st
 * **float**. The base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved
 * **fixed**. Positioning is relative to the base and the integer ambiguity is properly resolved. This is as good as it gets, **fix** solution status indicates high level of positioning precision
 
-If you got around to the **fixed** status everything is perfect. Satellite levels and therefore antenna placement severely affect RTK performance. Remember that you need at least 4 satellites with SNR levels over 45(marked green on the chart) to get RTK improved solution. 
+If you got around to the **fixed** status everything is perfect. Satellite levels and therefore antenna placement severely affect RTK performance. Remember that you need at least 4 satellites with SNR levels over 45(marked green on the chart) to get RTK improved solution.
