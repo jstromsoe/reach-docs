@@ -4,7 +4,7 @@ It is possible to connect radio modules to Reach in order to obtain corrections 
 
 Most radios nowadays use UART or USB as a connection.
 
-##### Connecting UART radio
+###### Connecting UART radio
 
 Logic level on UART in Reach is 3.3V but pins are 5V tolerant, so you can use both 3.3V and 5V logic level radios.
 
@@ -37,7 +37,7 @@ Connection diagram for RFD900 radio:
 
 Please mind that RFD can consume up to 800ma in peaks so make sure that your power source can provide enough power for both Reach and RFD900.
 
-##### Connecting USB radio
+###### Connecting USB radio
 
 To connect USB radio to Reach use USB-OTG cable provided with the package.
 Plug radio into USB-F port and plug Micro-USB end of the cable in Reach.
