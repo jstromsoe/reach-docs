@@ -1,5 +1,3 @@
-### Electrical specs
-
 #### Maximum ratings
 
 |Name                                       | Value                |
