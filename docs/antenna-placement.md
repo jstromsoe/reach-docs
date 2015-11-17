@@ -1,5 +1,3 @@
-### Antenna placement requirements for RTK
-
 You can place your smartphone near the window in your house and it will obtain GPS coordinates after some time, but for RTK such environment won't be sufficient. For RTK to work there are special requirements for antenna placement that are much more strict that for a standalone GPS.
 
 #### No obstacles blocking the skyview
