@@ -98,13 +98,28 @@ However, if you are only interested in rover's **relative** position accuracy, y
 
 #### Setting up rover
 
-Navigate to **Config** tab and choose **Rover** mode in the upper selector. Wait for the app to fetch current rover settings. Unlike the base mode, rover has a lot more settings and works with configuration files. You may choose the configuration file from the dropdown menu. Reach comes with several pre-defined default configs, such as **reach\_single\_default.conf** and **reach\_kinematic\_default.conf**.
+Navigate to **Config** tab and choose **Rover** mode in the upper selector. Wait for the app to fetch current rover settings.
 
-The most important settings for the rover include:
+###### Working with configuration files
+
+Unlike the base mode, rover has a lot more settings to work with and uses **configuration files** to store them.
+
+TODO: Screenshot
+
+You may choose the configuration file from the dropdown menu. Reach comes with several pre-defined default configs, such as **reach\_single\_default.conf** and **reach\_kinematic\_default.conf**. The menu(three dot) button allows to reset these configs to initial state, so you are free to mingle around in them. You can also copy them using "**Save As..**" button.
+
+The settings you see in rover mode are an exact mirror of RTKLIB's **rtkrcv** configuration files. They contain a lot of parameters, and all of them are available under the **Advanced settings** button. Some of these parameters retain original names as they are defined in **rtkrcv** configuration files.
+
+
+You can read everything about these settings in [RTKLIB docs](http://www.rtklib.com/rtklib_document.htm) in section "Configure Positioning Options for RTKNAVI and RTKPOST".  
+
+By default you can only see the most important ones:
 
 * Positioning mode
     * Single. The result relies only on the on-board GPS unit. Base corrections will not be used in positioning
     * Kinematic. Base corrections will be used to improve positioning. The rover is assumed to be moving. This is the main RTK mode
+    * Static. Base corrections will be used to improve positioning. The rover is assumed **not** to be moving.
+    *
 * Input source for base corrections. Specify the path to base corrections stream. Most common options include:
     * TCP client with an IP and port
     * Serial connection. Use **ttyUSB0** for USB devices and **ttyMFD2** and baudrate for UART devices
