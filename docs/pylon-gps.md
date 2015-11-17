@@ -1,6 +1,6 @@
 ### Pylon GPS
 
-![image](img/pylongps/pylongps.jpg)
+![image](img/pylon-gps/pylon-gps.jpg)
 
 **INTEGRATION OF REACH WITH PYLON GPS IS A WORK IN PROGRESS**
 
