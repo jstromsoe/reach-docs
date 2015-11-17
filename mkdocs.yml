@@ -12,7 +12,7 @@ pages:
 - Antenna placement: antenna-placement.md
 - ReachView app: reachview-app.md
 - Hardware integration: hardware-integration.md
-- PylonGPS: pylongps.md
+- PylonGPS: pylon-gps.md
 - Firmware reflashing: firmware-reflashing.md
 - Electrical specs: electrical-specs.md
 - Mechanical specs: mechanical-specs.md
