@@ -8,7 +8,7 @@ Reach RTK module is a tiny device, it is only a few millimeters larger than Inte
 |-----------|--------|-------|--------|
 | Size (mm) |  45.5  |   27  |   9.2  |
 
-![image](reach-top-view.png)
+![image](img/mechanical-specs/reach-top-view.png)
 
 #### Weight
 
@@ -24,7 +24,7 @@ Reach has dual DF13 connectors and comes with all required cables to connect to 
 
 Antenna connector is MCX, to connect to SMA or TNC antenna cable you can use one of the numerous adapters. ([cable](http://www.digikey.com/product-detail/en/CAB.0130/931-1102-ND/2332729), [adapter](http://www.digikey.com/product-detail/en/242127/ACX1348-ND/1012025))
 
-![image](sma-mcx-cable.jpg)![image](sma-mcx-adapter.jpg)
+![image](img/mechanical-specs/sma-mcx-cable.jpg)![image](img/mechanical-specs/sma-mcx-adapter.jpg)
 
 #### 3D model
 

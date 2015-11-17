@@ -14,10 +14,10 @@
 | Current limit on USB OTG                  | 1000 mA              |
 | Temperature range                         | 0 +40 C (-40 +85 C)^ |
 
-^ Officially Intel Edison is rated 0C to 40C, but Intel also claims they are performing temperature tests with good results, but just are not yet ready to officially rate Edison as extended temperature range device. Users report successful tests down to -40 C. 
+^ Officially Intel Edison is rated 0C to 40C, but Intel also claims they are performing temperature tests with good results, but just are not yet ready to officially rate Edison as extended temperature range device. Users report successful tests down to -40 C.
 
 #### Connectors pinout
-![image](reach-connectors.png)
+![image](img/electrical-specs/reach-connectors.png)
 
 * GPIO46, GPIO77, PWM, SCL, SDA, TX, RX are connected to Intel Edison via buffers and are 3.3 V logic level, 5 V tolerant.
 * TX and RX belong to UART1 on Intel Edison

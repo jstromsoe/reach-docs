@@ -32,7 +32,7 @@ Before flashing:
 3. Choose correct path to the unzipped image(You will need to point it to a **.json** file inside)
 4. Choose correct USB drivers. RNDIS for Windows, CDC for Mac and Linux
 
-![preflash](preflash.png)
+![preflash](img/firmware-reflashing/preflash.png)
 
 After this:
 
@@ -41,7 +41,7 @@ After this:
 3. Plug Reach in
 4. Monitor progress
 
-![flash](flash.png)
+![flash](img/firmware-reflashing/flash.png)
 
 ##### After flashing
 

@@ -4,19 +4,18 @@ site_favicon: favicon.ico
 repo_url: https://github.com/emlid/Docs
 pages:
 - Reach: index.md
-- Introduction: Reach/introduction/introduction.md
-- Roadmap: Reach/roadmap/roadmap.md
-- Kit contents: Reach/kit-contents/kit-contents.md
-- Quickstart: Reach/quickstart/quickstart.md
-- Power supply: Reach/power-supply/power-supply.md
-- Antenna placement: Reach/antenna-placement/antenna-placement.md
-- ReachView app: Reach/reachview-app/reachview-app.md
-- Hardware integration: Reach/hardware-integration/hardware-integration.md
-- GPS post-processing: Reach/gps-post-processing/gps-post-processing.md
-- PylonGPS: Reach/pylongps/pylongps.md
-- Firmware reflashing: Reach/firmware-reflashing/firmware-reflashing.md
-- Electrical specs: Reach/electrical-specs/electrical-specs.md
-- Mechanical specs: Reach/mechanical-specs/mechanical-specs.md
-- Software development: Reach/software-development/software-development.md
-- Troubleshooting: Reach/troubleshooting/troubleshooting.md
-- FAQ: Reach/faq/faq.md
+- Introduction: introduction.md
+- Roadmap: roadmap.md
+- Kit contents: kit-contents.md
+- Quickstart: quickstart.md
+- Power supply: power-supply.md
+- Antenna placement: antenna-placement.md
+- ReachView app: reachview-app.md
+- Hardware integration: hardware-integration.md
+- PylonGPS: pylongps.md
+- Firmware reflashing: firmware-reflashing.md
+- Electrical specs: electrical-specs.md
+- Mechanical specs: mechanical-specs.md
+- Software development: software-development.md
+- Troubleshooting: troubleshooting.md
+- FAQ: faq.md

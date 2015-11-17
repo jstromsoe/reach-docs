@@ -1,5 +1,3 @@
-### Hardware integration
-
 #### Radio
 
 It is possible to connect radio modules to Reach in order to obtain corrections or send calculated coordinates.
@@ -27,7 +25,7 @@ To connect UART radio to Reach use upper DF13 port (the one near the USB).
 
 Connection diagram for 3DR Radio v2:
 
-![image](reach-3dr-radio.png)
+![image](img/hardware-integration/reach-3dr-radio.png)
 
 3DR Radio can also be connected over USB.
 
@@ -35,7 +33,7 @@ Connection diagram for 3DR Radio v2:
 
 Connection diagram for RFD900 radio:
 
-![image](reach-rfd900-radio.png)
+![image](img/hardware-integration/reach-rfd900-radio.png)
 
 Please mind that RFD can consume up to 800ma in peaks so make sure that your power source can provide enough power for both Reach and RFD900.
 
@@ -49,8 +47,8 @@ USB radio is accessible on Reach as a serial device with the name **ttyUSB0**
 
 #### Pixhawk autopilot
 
-**[Integration of Reach RTK module with Pixhawk is a work in progress]**
+**[Integration of Reach RTK module with Pixhawk is a work in progress, instructions coming soon]**
 
 #### Camera
 
-**[Integration of Reach RTK module with cameras is a work in progress]**
+**[Integration of Reach RTK module with cameras is a work in progress, instructions coming soon]**

@@ -1,5 +1,3 @@
-### Introduction
-
 #### What is Reach and what is it for?
 
 Reach is an RTK GNSS receiver for applications when your standard GPS with several meters accuracy just won’t cut it. It relies on RTK (real-time kinematics) technology to deliver centimeter level accuracy.
@@ -27,8 +25,8 @@ Also, if you do not need the precise coordinates in real-time, you can just reco
 
 *Static mode:*
 
-![image](reach-static-rtk-demo.png)
+![image](img/introduction/reach-static-rtk-demo.png)
 
 *Kinematic mode:*
 
-![image](reach-kinematic-rtk-demo.png)
+![image](img/introduction/reach-kinematic-rtk-demo.png)

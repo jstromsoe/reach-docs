@@ -1,5 +1,3 @@
-### Kit contents
-
 #### Reach RTK kit
 
 Reach RTK kits include the following:

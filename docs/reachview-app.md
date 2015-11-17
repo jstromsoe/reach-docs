@@ -6,13 +6,13 @@ When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a 
 
 For example:
 
-![reach_network.png](reach_network.png)
+![reach_network.png](img/reachview-app/reach_network.png)
 
 ##### Connecting Reach to your Wi-Fi network
 
 After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Choose your Wi-Fi network (e.g. a hotspot on your smartphone) and enter a password. Hit **Submit** and wait for a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
 
-![reach_wifi_setup.png](reach_wifi_setup.png)
+![reach_wifi_setup.png](img/reachview-app/reach_wifi_setup.png)
 
 ***Repeat all previous steps for both Reach devices.***
 
@@ -33,7 +33,7 @@ If these are not the case, you will need to scan your local network. In most of 
 
 For example - a screenshot of fing running on an iPhone:
 
-![fing.png](fing.png)
+![fing.png](img/reachview-app/fing.png)
 
 #### Working with ReachView app
 
@@ -43,7 +43,7 @@ Once you have the address, enter it into a browser. The app should work on most 
 
 The first thing you should see is a status tab:
 
-![status_tab.png](status_tab.png)
+![status_tab.png](img/reachview-app/status_tab.png)
 
 ***The interface might be updated and look slightly different***
 
@@ -59,7 +59,7 @@ ReachView consists of three main tabs: **Status**, **Config**, **Logs**. Status 
 
 To do this, make sure Reach is connected to a Wi-Fi network with Internet access. Go to the Logs page and press the **Update** button. ReachView will go inactive for about a minute. To reconnect, close the current tab and try to open ReachView in a new one. It is preferred to use Reach's IP address instead of **reach.local** to connect after an update.
 
-![update.png](update.png)
+![update.png](img/reachview-app/update.png)
 
 <font color="red">***From this point, it is considered that you performed the update.***</font>
 
@@ -73,7 +73,7 @@ Reach in base mode only supports RTCM3 data output.
 
 There are several ways to stream it:
 
-* Serial connection. This option is used for two things: UART connection on the [upper DF-13 connector](../hardware-integration/hardware-integration.md) and USB devices with serial protocol, like USB radio
+* Serial connection. This option is used for two things: UART connection on the [upper DF-13 connector](hardware-integration.md) and USB devices with serial protocol, like USB radio
 * File. It is best to specify `/home/reach/logs/filename` path
 * TCP server. Set up a port listening for incoming connections
 * TCP client. Connect to a TCP server
