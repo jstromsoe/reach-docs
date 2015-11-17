@@ -1,4 +1,4 @@
-#### What is Reach and what is it for?
+### What is Reach and what is it for?
 
 Reach is an RTK GNSS receiver for applications when your standard GPS with several meters accuracy just won’t cut it. It relies on RTK (real-time kinematics) technology to deliver centimeter level accuracy.
 
@@ -6,7 +6,7 @@ RTK was here for a long time, used mostly by surveyors and unaffordable to hobby
 
 Reach runs open-source RTK processing software called RTKLIB written by Tomoji Takasu. Previously a computer was required to run RTKLIB, but now all RTKLIB features are available directly on Reach.
 
-#### What is an RTK?
+### What is an RTK?
 
 RTK is a technique used to improve the accuracy of gps system. Traditional GPS receivers, like one you can find in your smartphone, or on most robotic platforms could only determine  their position with 2-4 meters accuracy. RTK can give you centimeters.
 

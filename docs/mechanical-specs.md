@@ -1,6 +1,4 @@
-### Mechanical specs
-
-#### Dimensions
+### Dimensions
 
 Reach RTK module is a tiny device, it is only a few millimeters larger than Intel Edison that it houses.
 
@@ -10,11 +8,11 @@ Reach RTK module is a tiny device, it is only a few millimeters larger than Inte
 
 ![image](img/mechanical-specs/reach-top-view.png)
 
-#### Weight
+### Weight
 
 Weight of Reach is 14 grams.
 
-#### Connectors mating parts
+### Connectors mating parts
 
 Reach has dual DF13 connectors and comes with all required cables to connect to other devices. In case you would like to make you own cable assembly here are the appropriate connector part numbers:
 
@@ -26,7 +24,7 @@ Antenna connector is MCX, to connect to SMA or TNC antenna cable you can use one
 
 ![image](img/mechanical-specs/sma-mcx-cable.jpg)![image](img/mechanical-specs/sma-mcx-adapter.jpg)
 
-#### 3D model
+### 3D model
 
 This 3D model can be used as a reference for case design. Please note that Reach comes in protective heatshrink that increases its outer dimensions slightly.
 

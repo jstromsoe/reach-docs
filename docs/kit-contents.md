@@ -1,4 +1,4 @@
-#### Reach RTK kit
+### Reach RTK kit
 
 Reach RTK kits include the following:
 
@@ -14,7 +14,7 @@ Reach RTK kits include the following:
 
 * 2x Micro-USB <-> USB-F OTG cable
 
-#### Standalone Reach unit
+### Standalone Reach unit
 
 Standalone Reach units come with the following:
 

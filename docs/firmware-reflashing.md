@@ -1,4 +1,4 @@
-#### When to reflash the firmware
+### When to reflash the firmware
 
 On this page you will find the information on how to reflash Reach firmware.
 Please note that you don't need to do this unless you want to bring Reach to its initial state or new firmware image version is released.

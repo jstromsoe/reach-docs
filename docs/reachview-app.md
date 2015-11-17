@@ -1,6 +1,6 @@
-#### Setting up Reach networking
+### Setting up Reach networking
 
-##### Powering up for the first time
+#### Powering up for the first time
 
 When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named **reach-part_of_mac_address**. Keep in mind that it takes some time for network to show up on your device after it's been created.
 
@@ -8,7 +8,7 @@ For example:
 
 ![reach_network.png](img/reachview-app/reach_network.png)
 
-##### Connecting Reach to your Wi-Fi network
+#### Connecting Reach to your Wi-Fi network
 
 After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Choose your Wi-Fi network (e.g. a hotspot on your smartphone) and enter a password. Hit **Submit** and wait for a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
 
@@ -16,7 +16,7 @@ After connecting to the network hosted by reach, open a web browser on your smar
 
 ***Repeat all previous steps for both Reach devices.***
 
-##### Resolving IP address
+#### Resolving IP address
 
 After connecting Reach to an existing network, you will need to find it's IP address.
 
@@ -35,9 +35,9 @@ For example - a screenshot of fing running on an iPhone:
 
 ![fing.png](img/reachview-app/fing.png)
 
-#### Working with ReachView app
+### Working with ReachView app
 
-##### Connecting to ReachView
+#### Connecting to ReachView
 
 Once you have the address, enter it into a browser. The app should work on most reasonably modern browsers, including those in phones and tablets.
 
@@ -49,13 +49,13 @@ The first thing you should see is a status tab:
 
 As you can see, the default state for Reach is **stopped Rover**.
 
-##### Interface walkthrough
+#### Interface walkthrough
 
 ReachView consists of three main tabs: **Status**, **Config**, **Logs**. Status will show current satellite levels, solution status and coordinates. Config tab is used to set RTKLIB parameters like positioning mode, set correction input interface and more. Logs tab keeps links to raw data logs stored on the device and some other miscellaneous useful features.
 
 ***It is very important that you perform self-update during your first Reach use.***
 
-##### Updating ReachView
+#### Updating ReachView
 
 To do this, make sure Reach is connected to a Wi-Fi network with Internet access. Go to the Logs page and press the **Update** button. ReachView will go inactive for about a minute. To reconnect, close the current tab and try to open ReachView in a new one. It is preferred to use Reach's IP address instead of **reach.local** to connect after an update.
 
@@ -63,11 +63,11 @@ To do this, make sure Reach is connected to a Wi-Fi network with Internet access
 
 <font color="red">***From this point, it is considered that you performed the update.***</font>
 
-##### Setting up base station
+#### Setting up base station
 
 Navigate to **Config** tab and choose **Base** mode in the upper selector. Wait for the app to fetch current base settings. The settings include: base coordinates, input stream, output stream and RTCM3 messages to be used. **Input stream** settings must not be changed.
 
-###### Base output settings
+##### Base output settings
 
 Reach in base mode only supports RTCM3 data output.
 
@@ -80,11 +80,11 @@ There are several ways to stream it:
 * Ntrip client.
 * Ntrip server.
 
-###### Base RTCM3 output messages
+##### Base RTCM3 output messages
 
 A number of output messages is supported, you can find more information about them [here](http://www.geopp.de/rtcm-3-x-message-types/).
 
-###### Base coordinates
+##### Base coordinates
 
 **This is a key point in getting good results.** Reach in base mode needs to know it's coordinates. Best practice is setting up base on a well-known position(coordinates determined by RTK) as this directly affects positioning results.
 
@@ -96,7 +96,7 @@ To achieve **good absolute positioning** results on the rover, base needs to kno
 
 However, if you are only interested in rover's **relative** position accuracy, you may use a less accurate position for the base.
 
-##### Setting up rover
+#### Setting up rover
 
 Navigate to **Config** tab and choose **Rover** mode in the upper selector. Wait for the app to fetch current rover settings. Unlike the base mode, rover has a lot more settings and works with configuration files. You may choose the configuration file from the dropdown menu. Reach comes with several pre-defined default configs, such as **reach\_single\_default.conf** and **reach\_kinematic\_default.conf**.
 
@@ -120,7 +120,7 @@ When you are done with the settings, hit the **SAVE & LOAD** button. This will s
 *TODO*
 Set up a correction stream.
 
-##### Viewing results
+#### Viewing results
 
 **Status** tab is the place to monitor current state of the positioning solution. First thing you see is a chart showing rover's satellite levels. Good reception of the satellite signal is essential for RTK technology to be able to produce a good positioning solution. This chart is intended to help with antenna placement. If you are in mode that involves base corrections and the input is setup correctly, you will see base satellite levels as well. The grid above the chart shows current state as the current positioning mode, solution status and coordinates in llh format.
 
@@ -134,7 +134,7 @@ The solution status value(simply labeled **status** in the grid) is the key valu
 *TODO*
 Wait for Float status, then for Fix. LED statuses
 
-##### Output: logs and solution
+#### Output: logs and solution
 
 Reach supports outputting two types of data: **raw data logs** and processed **solution**.
 
