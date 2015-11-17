@@ -25,11 +25,15 @@ When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a 
 
 ### Setting up Wi-Fi
 
+![reach_wifi_setup.png](img/quickstart/reach_wifi_setup.png)
+
 After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Choose your Wi-Fi network (e.g. a hotspot on your smartphone) "mywifinetwork" and enter a password. Hit submit and wait for a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
 
 ***Repeat all previous steps for both Reach devices.***
 
 ### Accessing Reach device in a network
+
+![fing.png](img/quickstart/fing.png)
 
 After connecting Reach devices to an existing Wi-Fi network, you will need to identify their IP's. For this you can use a smartphone app "Fing", "nmap" on Linux/OS X and Zenmap on Windows. Reach will show up as "Murata manufacturing" device in these apps.
 
@@ -38,6 +42,8 @@ If your device supports Bonjour discovery, you can access Reach with "reach.loca
 ### Working with ReachView app
 
 #### Updating ReachView
+
+![update.png](img/quickstart/update.png)
 
 To do this, make sure Reach is connected to a Wi-Fi network with Internet access. Go to the Logs page and press the **Update** button. ReachView will go inactive for about a minute. To reconnect, close the current tab and try to open ReachView in a new one. It is preferred to use Reach's IP address instead of **reach.local** to connect after an update.
 
@@ -49,7 +55,11 @@ Open a web browser on your smartphone, tablet or laptop and type IP address of R
 
 #### Setting up base station
 
+![base_mode.png](img/quickstart/base_mode.png)
+
 Connect to Reach you want to use as a base. Navigate to Config tab and choose **Base** in the upper selector. Wait for the app to fetch current base settings. The settings include: base coordinates, input stream, output stream and RTCM3 messages to be used.
+
+![base_output_stream.png](img/quickstart/base_output_stream.png)
 
 By default, base output stream will be available on a TCP port 9000.
 
@@ -57,13 +67,19 @@ Hit the **Start** button.
 
 #### Setting up rover
 
+![rover_kinematic.png](img/quickstart/rover_kinematic.png)
+
 Connect to the second Reach. Navigate to **Config** tab and choose **Rover** mode in the upper selector. Wait for the app to fetch current rover settings. Choose **reach_kinematic_default.conf** from the configuration file list.
+
+![rover_base_stream.png](img/quickstart/rover_base_stream.png)
 
 Now, you need to change base station connection settings. Make sure that "Input source for base corrections" is set to **TCP client** and enter base Reach's IP address to the address window. Default port is 9000.
 
 Hit the **Save** button. Click "Yes" to load current settings. The rover mode will start.
 
 #### Viewing results
+
+![status.png](img/quickstart/status.png)
 
 Go to **Status** tab of the app on the rover device. You can see a bar chart with satellite levels, current coordinates in llh format, positioning mode and solution status. In this quick tutorial, positioning mode is set to "Kinematic" which is the main RTK mode.
 
