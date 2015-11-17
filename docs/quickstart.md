@@ -17,18 +17,23 @@ Take Micro-USB<-->USB cable that is coming with the package. Plug Micro-USB end 
 
 Plug antenna cable into MCX socket on Reach. Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building. There should be no obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
 
+<font color="red">Do not test the device indoors or near large buildings. RTK requires good satellite reception. </font>
+
 ### Connecting to Reach
 
-When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named "reach-something".
-
-### Accessing Reach device in a network
-
-If you have a smartphone \ tablet \ laptop with Bonjour service running on it such as iPhone, Mac you can access Reach by using address "reach.local".
-If your OS is Android use an app called Fing to find IP addresses of Reach devices in the network. Note that Reach units will probably show up as "Murata manufacturing" devices in the app.
+When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named "reach:part_of_mac_address". For example, **reach:66:ac**. The network password is "emlidreach".
 
 ### Setting up Wi-Fi
 
 After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Choose your Wi-Fi network (e.g. a hotspot on your smartphone) "mywifinetwork" and enter a password. Hit submit and wait for a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
+
+***Repeat all previous steps for both Reach devices.***
+
+### Accessing Reach device in a network
+
+After connecting Reach devices to an existing Wi-Fi network, you will need to identify their IP's. For this you can use a smartphone app "Fing", "nmap" on Linux/OS X and Zenmap on Windows. Reach will show up as "Murata manufacturing" device in these apps.
+
+If your device supports Bonjour discovery, you can access Reach with "reach.local" address. However, with two devices on the network only one will respond to "reach.local".
 
 ### Working with ReachView app
 
@@ -40,7 +45,7 @@ To do this, make sure Reach is connected to a Wi-Fi network with Internet access
 
 #### Interface walkthrough
 
-Open a web browser on your smartphone, tablet or laptop and type IP address of Reach in the address bar. ReachView consists of three main tabs: Status, Config, Logs. Status will show current satellite levels, solution status and coordintes. Config tab is used to set RTK parameters like positioning mode, set correction input interface and more. Logs tab keeps links to raw data logs, stored on the device and keeps the self-update button. By default, Reach starts as a rover and is stopped.
+Open a web browser on your smartphone, tablet or laptop and type IP address of Reach in the address bar. ReachView consists of three main tabs: Status, Config, Logs. Status will show current satellite levels, solution status and coordinates. Config tab is used to set RTK parameters like positioning mode, set correction input interface and more. Logs tab keeps links to raw data logs, stored on the device and keeps the self-update button. By default, Reach starts as a rover and is stopped.
 
 #### Setting up base station
 
@@ -69,4 +74,10 @@ If everything has been set up correctly, you will see changes in the solution st
 * **float**. The base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved
 * **fixed**. Positioning is relative to the base and the integer ambiguity is properly resolved. This is as good as it gets, **fix** solution status indicates high level of positioning precision
 
-If you got around to the **fixed** status everything is perfect. Satellite levels and therefore antenna placement severely affect RTK performance. Remember that you need at least 4 satellites with SNR levels over 45(marked green on the chart) to get RTK improved solution.
+If you see **float** or **fixed** solution status, RTK is set up correctly.
+
+Remember that satellite levels and therefore antenna placement severely affect RTK performance. You need at least 5 satellites with SNR levels over 45(marked green on the chart) to get RTK improved solution.
+
+### More reading
+
+Congratulations on finishing the quickstart tutorial! Continue to learn about setting up different correction links in the [ReachView section](reachview-app.md).

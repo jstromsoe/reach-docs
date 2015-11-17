@@ -2,7 +2,7 @@
 
 #### Powering up for the first time
 
-When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named **reach-part_of_mac_address**. Keep in mind that it takes some time for network to show up on your device after it's been created.
+When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named **reach-part_of_mac_address**. Keep in mind that it takes some time for network to show up on your device after it's been created. Network password is "emlidreach".
 
 For example:
 
