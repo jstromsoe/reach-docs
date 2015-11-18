@@ -2,7 +2,7 @@
 
 In this quick tutorial we will show you how to two set up two Reach devices as a base and a rover with correction link over Wi-Fi.
 
-<font color="red"> **Please note that this tutorial covers only one of the numerous setup options. To understand how to make a different setup please read the following sections in the docs:** </font>
+<font color="red"> Please note that this tutorial covers only one of the numerous setup options. To understand how to make a different setup please read the following sections in the docs: </font>
 
 * [Mechanical specs](mechanical-specs.md)
 * [Electrical specs](electrical-specs.md)
@@ -59,7 +59,7 @@ To do this, make sure Reach is connected to a Wi-Fi network with Internet access
 
 ***Perform an update for both Reach devices.***
 
-<font color="red">***From this point, it is considered that you performed the update.***</font>
+<font color="red">From this point, it is considered that you performed the update.</font>
 
 #### Setting up base station
 
