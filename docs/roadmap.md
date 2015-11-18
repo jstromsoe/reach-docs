@@ -8,12 +8,15 @@ In the following table you will find Reach RTK feature status. The table will be
 
 | Feature                             | Status      |
 |-------------------------------------|-------------|
-| RTK mode                            | Done        |
+| RTKLIB engine control               | Done        |
+| Config management                   | Done        |
+| Satellite level visualization       | Done        |
+| Software self-update                | Done        |
 | Logging                             | Done        |
 | RGB LED status                      | Done        |
-| Automatic average base coordinates  | In progress |
-| Pixhawk integration                 | In progress |
 | Downloading logs in UBX             | Done        |
-| Downloading logs in RINEX           | To do       |
+| Automatic average base coordinates  | Done        |
+| Pixhawk integration                 | In progress |
+| Downloading logs in RINEX           | In progress |
 | Converting events to RINEX          | To do       |
-| Camera integration                  | To do       |
+| Camera trigger                      | To do       |
