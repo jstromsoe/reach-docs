@@ -19,9 +19,9 @@ More on power supply [here](power-supply.md).
 
 Plug antenna cable into MCX socket on Reach. Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building. There should be no obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
 
-<font color="red">Do not test the device indoors or near large buildings. RTK requires good satellite reception. </font>
+<font color="red">Do not test the device indoors or near buildings, do not cover the skyview for the antennas with laptops, cars or yourself. RTK requires good satellite visibility and reception. </font>
 
-More on antenna placement [here](antenna-placement.md).
+A guide how to properly place the antennas is availble in [Antenna Placement](antenna-placement.md) section.
 
 ### Connecting to Reach
 
@@ -33,7 +33,7 @@ When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a 
 
 After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Choose your Wi-Fi network (e.g. a hotspot on your smartphone) "mywifinetwork" and enter a password. Hit submit and wait for a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
 
-***Repeat all previous steps for both Reach devices.***
+***Perform all previous steps for both Reach devices.***
 
 ### Accessing Reach device in a network
 
@@ -57,7 +57,7 @@ Open a web browser on your smartphone, tablet or laptop and type IP address of R
 
 To do this, make sure Reach is connected to a Wi-Fi network with Internet access. Go to the Logs page and press the **Update** button. ReachView will go inactive for about a minute. To reconnect, close the current tab and try to open ReachView in a new one. It is preferred to use Reach's IP address instead of **reach.local** to connect after an update.
 
-***Repeat all previous steps for both Reach devices.***
+***Perform an update for both Reach devices.***
 
 <font color="red">***From this point, it is considered that you performed the update.***</font>
 
@@ -93,10 +93,10 @@ Go to **Status** tab of the app on the rover device. You can see a bar chart wit
 
 If everything has been set up correctly, you will see changes in the solution status box. You will see the statuses in the following order:
 
-* **"-"**. This means there is not information for the software to process. Either not enough time has passed or the antenna is poorly placed
-* **single**. This is usually the state that follows **"-"** in RTK mode. **Single** means that rover has found a solution relying on it's own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result
-* **float**. The base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved
-* **fixed**. Positioning is relative to the base and the integer ambiguity is properly resolved. This is as good as it gets, **fix** solution status indicates high level of positioning precision
+* **"-"**. This means there is no information for the software to process. Either not enough time has passed or the antenna is not placed correctly.
+* **single**. This is usually the state that follows **"-"** in RTK mode. **Single** means that rover has found a solution relying on it's own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result.
+* **float**. The base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved.
+* **fixed**. Positioning is relative to the base and the integer ambiguity is properly resolved. This is as good as it gets, **fix** solution status indicates high level of positioning precision.
 
 If you see **float** or **fixed** solution status, RTK is set up correctly.
 
