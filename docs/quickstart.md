@@ -13,15 +13,19 @@ In this quick tutorial we will show you how to two set up two Reach devices as a
 
 Take Micro-USB<-->USB cable that is coming with the package. Plug Micro-USB end of the cable into Micro-USB port on Reach and plug another end into 5V power source such as USB power bank, USB wall adapter or USB port of a computer.
 
+More on power supply [here](power-supply.md).
+
 ### Connecting and placing antenna
 
 Plug antenna cable into MCX socket on Reach. Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building. There should be no obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
 
 <font color="red">Do not test the device indoors or near large buildings. RTK requires good satellite reception. </font>
 
+More on antenna placement [here](antenna-placement.md).
+
 ### Connecting to Reach
 
-When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named "reach:part_of_mac_address". For example, **reach:66:ac**. The network password is "emlidreach".
+When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named "reach:part_of_mac_address". For example, **reach:66:ac**. The network password is "**emlidreach**".
 
 ### Setting up Wi-Fi
 
@@ -39,7 +43,13 @@ After connecting Reach devices to an existing Wi-Fi network, you will need to id
 
 If your device supports Bonjour discovery, you can access Reach with "reach.local" address. However, with two devices on the network only one will respond to "reach.local".
 
+Read more on resolving IP addresses in the [ReachView section](reachview-app.md).
+
 ### Working with ReachView app
+
+#### Interface walkthrough
+
+Open a web browser on your smartphone, tablet or laptop and type IP address of Reach in the address bar. ReachView consists of three main tabs: **Status**, **Config**, **Logs**. **Status** will show current satellite levels, solution status and coordinates. **Config** tab is used to set RTK parameters like positioning mode, set correction input interfaces and more. **Logs** tab keeps links to raw data logs, stored on the device and keeps the self-update button. By default, Reach starts as a rover and is stopped.
 
 #### Updating ReachView
 
@@ -49,9 +59,7 @@ To do this, make sure Reach is connected to a Wi-Fi network with Internet access
 
 ***Repeat all previous steps for both Reach devices.***
 
-#### Interface walkthrough
-
-Open a web browser on your smartphone, tablet or laptop and type IP address of Reach in the address bar. ReachView consists of three main tabs: Status, Config, Logs. Status will show current satellite levels, solution status and coordinates. Config tab is used to set RTK parameters like positioning mode, set correction input interface and more. Logs tab keeps links to raw data logs, stored on the device and keeps the self-update button. By default, Reach starts as a rover and is stopped.
+<font color="red">***From this point, it is considered that you performed the update.***</font>
 
 #### Setting up base station
 

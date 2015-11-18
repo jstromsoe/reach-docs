@@ -4,7 +4,7 @@ Emlid Reach RTK module can be powered using Micro-USB port or DF13 ports. Power 
 
 **IMPORTANT**
 
-Do not plug two power supplies at the same time as it may damage the device.
+<font color="red">Do not plug two power supplies at the same time as it may damage the device.</font>
 
 ### Power supply over USB
 

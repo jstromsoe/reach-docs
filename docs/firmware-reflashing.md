@@ -10,7 +10,7 @@ More information on how to update ReachView app is available in [ReachView App d
 We provide a special, enhanced Intel Edison image with following changes:
 
 * Pre-installed software, including RTKLIB, ReachView, socat and more
-* WiFi-setup service(Creates an access point, if no known WiFi networks are found)
+* Wi-Fi setup service(Creates an access point, if no known WiFi networks are found)
 * Created user "reach" with set up passwords, permissions, etc.
 
 While Reach units are flashed before shipping, we plan to update the image in the future. You can get the latest version [here](http://emlid.com)
