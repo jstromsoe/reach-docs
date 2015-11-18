@@ -140,20 +140,19 @@ Common stream paths include:
 
 Paths, specific to input stream:
 
-* NTRIP client. Connect to a NTRIP caster. 
-* http
-* ftp
+* NTRIP client. Connect to a NTRIP caster. You will need an **address** and a **port**, some casters also require a **login** and a **password**
+* http. Enter a **URL**
+* ftp. Enter a **URL**
 
 Paths, specific to output streams:
 
-* NTRIP server
+* NTRIP server. Create your own NTRIP caster. Required option is a port, on which the stream will be served. You can include a password to protect your data.
 
 Under **Advanced settings** you can see much more parameters for fine-tuning RTK performance.
 
 When you are done with the settings, hit the **SAVE & LOAD** button. This will start the calculations and writing the raw data log. Proceed to the **Status** tab to check your setup.
 
-You can read everything about these settings in [RTKLIB docs](http://www.rtklib.com/rtklib_document.htm) in section "Configure Positioning Options for RTKNAVI and RTKPOST".  
-
+You can read everything about these settings in [RTKLIB docs](http://www.rtklib.com/rtklib_document.htm) in section "Configure Positioning Options for RTKNAVI and RTKPOST".
 
 *TODO*
 Set up a correction stream.
