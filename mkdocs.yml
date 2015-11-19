@@ -1,7 +1,7 @@
 site_name: Emlid
 theme: docstheme
 site_favicon: favicon.ico
-repo_url: https://github.com/emlid/Docs
+repo_url: https://github.com/emlid/reach-docs
 pages:
 - Reach: index.md
 - Introduction: introduction.md
