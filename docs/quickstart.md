@@ -57,9 +57,7 @@ To do this, make sure Reach is connected to a Wi-Fi network with Internet access
 
 ***Perform an update for both Reach devices.***
 
-![update.png](img/quickstart/update.png)
-
-<font color="red">***From this point, it is considered that you performed the update.***</font>
+<font color="red">From this point, it is considered that you performed the update.</font>
 
 #### Setting up base station
 
@@ -79,7 +77,7 @@ Connect to the second Reach. Navigate to **Config** tab and choose **Rover** mod
 
 ![rover_kinematic.png](img/quickstart/rover_kinematic.png)
 
-Now, you need to change base station connection settings. Make sure that "Input source for base corrections" is set to **TCP client** and enter base Reach's IP address to the address window. Default port is 9000.
+Now, you need to change base station connection settings. Make sure that "Input source for base corrections" is set to **tcpcli** (TCP client) and enter base Reach's IP address to the address window. Default port is 9000.
 
 ![rover_base_stream.png](img/quickstart/rover_base_stream.png)
 
