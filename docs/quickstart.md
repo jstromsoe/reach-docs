@@ -85,6 +85,8 @@ Hit the **Save** button. Click "Yes" to load current settings. The rover mode wi
 
 #### Viewing results
 
+##### ReachView status
+
 Go to **Status** tab of the app on the rover device. You can see a bar chart with satellite levels, current coordinates in llh format, positioning mode and solution status. In this quick tutorial, positioning mode is set to "Kinematic" which is the main RTK mode.
 
 If everything has been set up correctly, you will see changes in the solution status box. You will see the statuses in the following order:
@@ -96,9 +98,29 @@ If everything has been set up correctly, you will see changes in the solution st
 
 If you see **float** or **fixed** solution status, RTK is set up correctly.
 
-![status.png](img/quickstart/status.png)
+![fix_status.png](img/quickstart/fix_status.png)
 
 Remember that satellite levels and therefore antenna placement severely affect RTK performance. You need at least 5 satellites with SNR levels over 45(marked green on the chart) to get RTK improved solution.
+
+##### RTKPLOT
+
+You can view your solution in real time with RTKLIB's RTKPLOT(requires a Windows PC).
+
+First, we need to configure solution output. Go to rover's **Config** tab, and make solution output a TCP server, just like with the base output stream. Make sure output format is **llh**.
+
+![solution_output.png](img/quickstart/solution_output.png)
+
+Now, open RTKPLOT and change connection settings to be a TCP client(File -> Connection settings). Enter rover's IP address and the port you entered to solution output settings.
+
+![rtkplot_connection.png](img/quickstart/rtkplot_connection.png)
+
+Connect using File -> Connect
+
+![rtkplot_fix.png](img/quickstart/rtkplot_fix.png)
+
+
+
+
 
 ### More reading
 
