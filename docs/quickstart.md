@@ -83,6 +83,13 @@ Now, you need to change base station connection settings. Make sure that "Input 
 
 Hit the **Save** button. Click "Yes" to load current settings. The rover mode will start.
 
+
+#### Keeping the settings
+
+After configuration, Reach will remember it's settings and start in this state on boot. For example, device configured as Rover with "reach_single_default.conf" configuration file, started, will start Rover with the same config after a power cycle. Base mode will also keep it's settings and started/stopped state.
+
+If, for some reason, Reach is rebooted during configuration process, the settings file might get corrupted. Then, by default Reach will start as a stopped Rover with "reach_single_default.conf" settings.
+
 #### Viewing results
 
 ##### ReachView status
@@ -117,10 +124,6 @@ Now, open RTKPLOT and change connection settings to be a TCP client(File -> Conn
 Connect using File -> Connect
 
 ![rtkplot_fix.png](img/quickstart/rtkplot_fix.png)
-
-
-
-
 
 ### More reading
 
