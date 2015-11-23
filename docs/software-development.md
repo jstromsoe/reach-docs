@@ -15,11 +15,40 @@ If these are not the case, you will need to scan your local network. In most of 
 * You can use **nmap** to scan your local network on Linux/Mac OS X. Nmap is cli tool available through most package managers like [homebrew](http://brew.sh) on Mac and **apt-get** on Debian based Linux distributions. Example of using nmap to perform host discovery would be `sudo nmap -sn 192.168.1.0/24`
 * On Windows, you can use **Zenmap**, which is a GUI for **nmap** or use any other third-party network scanners.
 
-##### Linux/Mac OS X
+##### Using Ethernet over USB
+
+With Reach you can use a virtual Ethernet network over a USB connection. Intel Edison officially supports this type of connection on Windows and Linux hosts.
+
+###### Windows
+
+You might need to wait for Windows to install the driver after plugging Reach in.
+
+* In Windows 7 and below, go to the Control Panel. Under Network and Internet, click View network status and tasks. Click Change Adapter Settings in the sidebar
+* In Windows 8, right-click the Windows Start menu button and select Network Connections
+
+Choose the network adapter with RNDIS label. Go to properties, configure IPv4 IP address. Set manual IP address **192.168.2.2** with **255.255.255.0** mask. Apply changes.
+
+Reach should now be available on **192.168.2.15** address.
+
+###### Linux
+
+Run `ifconfig` to check if you have a **usb0** interface available. It will not appear until Reach has at least partly booted.
+
+If you do, run `sudo ifconfig usb0 192.168.2.2`.
+
+Reach should now be available on **192.168.2.15**.
+
+###### Mac OS X
+
+This is not officially supported, but there is a [workaround](https://communities.intel.com/message/286267) that works on some versions of OS X.
+
+##### SSH connection
+
+###### Linux/Mac OS X
 
 Open up a terminal and type `ssh reach@192.168.1.3`, where **192.168.1.3** is the IP address of your Reach unit. If there is only one Reach unit on the network, it should be accessible by `ssh reach@reach.local`. If you are on the Reach-hosted network, it's IP address will always be **192.168.42.1**. The **password** is also **reach**.
 
-##### Windows
+###### Windows
 
 To connect, you will need to use **putty** or another third-party ssh implementation. After you have determined the IP address, type it in along with username **reach**. The **password** is also **reach**.
 
@@ -66,7 +95,7 @@ The front-end is built using [**jQuery**](https://jquery.com), [**Socket.IO**](h
 
 ### Working with RTKLIB without ReachView
 
-If you wish, you can disable ReachView by disabling the start-up service called **reach-setup**. To do this, run `sudo systemctl disable reach-setup.service`. However, this will also disable the WiFi setup.
+If you wish, you can disable ReachView by disabling the start-up service called **reach-setup**. To do this, run `sudo systemctl disable reach-setup.service`. However, this will also disable the Wi-Fi setup.
 
 The main workflow for working with RTKLIB is the same as with any other Linux platform.
 
