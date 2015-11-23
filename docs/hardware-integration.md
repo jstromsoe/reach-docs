@@ -21,8 +21,6 @@ To connect UART radio to Reach use upper DF13 port (the one near the USB).
 
 ** 3DR Radio **
 
-<font color="red">DO NOT CONNECT 3DR RADIO TO REACH WITH DF13-TO-DF13 CABLE FROM THE PACKAGE, IT CAN CAUSE DAMAGE TO THE RADIO.</font>
-
 Connection diagram for 3DR Radio v2:
 
 ![image](img/hardware-integration/reach-3dr-radio.png)
