@@ -20,6 +20,6 @@ When you power Reach over Micro-USB port it can then provide power to devices co
 
 ### Powering using DF13 ports
 
-Reach can be powered by providing 5 Volts to corresppnding pins on any of the two DF13 ports.
+Reach can be powered by providing 5 Volts to corresponding pins on any of the two DF13 ports.
 
 When Reach is powered over DF13 port it will pass power to devices connected to Micro-USB OTG port such as flash drives, 3G\4G modems, USB radios etc.
