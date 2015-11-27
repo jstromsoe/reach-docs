@@ -21,7 +21,7 @@ There are two ways to flash the image. Intel's GUI Phone Flash Tool Lite and a C
 
 ##### Getting Intel Phone Flash Tool Lite
 
-You can get the tool [here](https://software.intel.com/ru-ru/iot/hardware/edison/downloads). It is available for Windows, Mac and Linux. If you are running Windows, you will also need to install the drivers provided on the same page.
+You can get the tool [here](https://software.intel.com/en-us/iot/hardware/edison/downloads). It is available for Windows, Mac and Linux. If you are running Windows, you will also need to install the drivers provided on the same page.
 
 ##### Flashing Reach
 
