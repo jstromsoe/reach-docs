@@ -27,6 +27,8 @@ Connection diagram for 3DR Radio v2:
 
 3DR Radio can also be connected over USB.
 
+Please note that a bug in the Reach app v0.0.1 prevents the Rover module from booting while it`s receiving UART correction signals from the base module. Current fix is powering up base module after the rover module has booted (LED are blinking red/blue/withe).
+
 ** RFD900 Radio **
 
 Connection diagram for RFD900 radio:
