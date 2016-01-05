@@ -15,7 +15,7 @@ In the following table you will find Reach RTK feature status. The table will be
 | Logging                             | Done        |
 | RGB LED status                      | Done        |
 | Downloading logs in UBX             | Done        |
-| Automatic average base coordinates  | Done        |
+| Automatic average base coordinates  | In progress |
 | Base satellite level visualization  | In progress |
 | Pixhawk integration                 | In progress |
 | Downloading logs in RINEX           | In progress |
