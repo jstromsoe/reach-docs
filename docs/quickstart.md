@@ -29,11 +29,13 @@ When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a 
 
 ### Setting up Wi-Fi
 
-After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Choose your Wi-Fi network (e.g. a hotspot on your smartphone) "mywifinetwork" and enter a password. Hit submit and wait for a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
+After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Enter your Wi-Fi network (e.g. a hotspot on your smartphone) "mywifinetwork" and enter a password. Hit submit and wait for about a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
+
+Note that after hitting "Submit" a **progress bar** will appear. You **should not** wait for the progress bar to reach it's end. **That sometimes ends with an error message which is irrelevant and misleading**. Don't wait for more than 30 seconds, as it's usually more than enough for the device to reconnect to a new network.
 
 ***Perform all previous steps for both Reach devices.***
 
-![reach_wifi_setup.png](img/quickstart/reach_wifi_setup.png)
+![reach_wifi_setup.png](img/quickstart/reach_wifi_setup.png
 
 ### Accessing Reach device in a network
 
