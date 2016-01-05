@@ -14,14 +14,22 @@
 
 3) Check that baseline length (distance between the rover and the base station) is less than 10km.
 
+### Unable to connect to Reach-hosted Wi-Fi access point
+
+This problem appears to be tied to Reach image v1.1. Please, reflash the device with the [latest image](firmware-reflashing.md).
+
 ### “Reach.local” unreachable
 
-*TODO*
+1) Try to determine whether Reach is connected to your network(Detailed guide can be found [here](reachview-app.md).
+
+2) Try to connect to ReachView via an IP address(make sure this is Reach's IP and it's pingable)
+
+3) Check the LED statuses. Normal pattern consists of four or five lights, starting with white. If you can't see that, then ReachView probably exited with failure. Try rebooting the device.
 
 ### Resetting broken default configs
 
-*TODO*
+You can reset default configs via the three dot menu in the Config tab.
 
 ### Updating ReachView (and resetting in case of misconfiguration)
 
-*TODO*
+Starting from v0.0.3, ReachView update process includes an animation. If, for some reason, the update process failed and ReachView is not accessible after update(resolving the address after server restart takes some time). Try rebooting the device. If even that does not help, consider [reflashing](firmware-reflashing.md).
