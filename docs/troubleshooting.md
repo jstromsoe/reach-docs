@@ -22,6 +22,8 @@ This problem appears to be tied to Reach image v1.1. Please, reflash the device 
 
 When trying to connect Reach to your network via network setup, after you hit the "Submit" button, you will see a progress bar. You **should not** wait for the progress bar to reach it's end. **That sometimes ends with an error message which is irrelevant and misleading**. Don't wait for more than 30 seconds, as it's usually more than enough for the device to reconnect to a new network.
 
+![wifi_error.png](img/troubleshooting/wifi_error.png)
+
 ### “Reach.local” unreachable
 
 1) Try to determine whether Reach is connected to your network(Detailed guide can be found [here](reachview-app.md).
