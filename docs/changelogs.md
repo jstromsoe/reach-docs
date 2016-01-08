@@ -1,5 +1,11 @@
 ### ReachView changelog
 
+#### v0.0.4
+
+* Default receiver settings have been changed
+* You can now set used GNSS systems and solution frequency for both base and rover modes
+* Multiple bugfixes and improvements
+
 #### v0.0.3
 
 * Moved the chart engine from [Chart.js](http://www.chartjs.org/) to [d3.js](http://d3js.org/)
