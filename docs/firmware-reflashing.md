@@ -13,7 +13,9 @@ We provide a special, enhanced Intel Edison image with following changes:
 * Wi-Fi setup service(Creates an access point, if no known WiFi networks are found)
 * Created user "reach" with set up passwords, permissions, etc.
 
-While Reach units are flashed before shipping, we plan to update the image in the future. You can get the latest version(v1.2) [here](http://files.emlid.com/data/public/43c706).
+While Reach units are flashed before shipping, we plan to update the image in the future. You can get the latest version here:
+
+[**Reach Image v1.2**](http://files.emlid.com/data/public/43c706)
 
 There are two ways to flash the image. Intel's GUI Phone Flash Tool Lite and a CLI script.
 
@@ -40,14 +42,9 @@ After this:
 2. Hit the blue **Start to flash** button
 3. Plug Reach in
 4. Monitor progress
+5. Proceed to "After flashing"
 
 ![flash](img/firmware-reflashing/flash.png)
-
-##### After flashing
-
-After flashing Reach will reboot and start self-tests and initial setup. This will be signalised with the onboard LED. Sometimes this does not happen automatically and you will need to replug it into the power source to continue.
-
-Normal behaviour for a freshly flashed Reach is to go through initial setup(LED will glow white for quite a long time), then create an access point and wait for connections
 
 #### Flashing Reach from Terminal
 
@@ -65,6 +62,7 @@ To flash:
 2. Run `flashall.bat`
 3. Plug Reach in
 4. Monitor progress in the terminal window
+5. Proceed to "After flashing"
 
 ##### Mac OS X
 
@@ -81,6 +79,7 @@ To flash:
 2. Run `sudo ./flashall.sh`
 3. Plug Reach in
 4. Monitor progress in the terminal window
+5. Proceed to "After flashing"
 
 ##### Linux
 
@@ -95,3 +94,15 @@ To flash:
 2. Run `sudo ./flashall.sh`
 3. Plug Reach in
 4. Monitor progress in the terminal window
+5. Proceed to "After flashing"
+
+#### After flashing
+
+After the initial process is done, Reach will reboot. **Do not unplug it until it reboots and goes through the initial setup process completely**.
+
+Since image version **1.2**, the LED signals during startup are as follows:
+
+* <font color="magenta">Magenta</font> during device boot
+* Off, then White for a second to show script start
+* Blinking <font color="yellow">Yellow</font> while looking for known networks
+* <font color="green">Green</font> after creating a hotspot
