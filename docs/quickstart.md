@@ -29,6 +29,8 @@ A guide how to properly place the antennas is available in [Antenna Placement](a
 
 When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named "reach:part_of_mac_address". For example, **reach:66:ac**. The network password is "**emlidreach**".
 
+> If this password is not accepted, probably your Reach has been flashed with a bugged firmware, please [reflash](firmware-reflashing.md) with the latest image.
+
 ### Setting up Wi-Fi
 
 After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Enter your Wi-Fi network (e.g. a hotspot on your smartphone) "mywifinetwork" and enter a password. Hit submit and wait for about a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
