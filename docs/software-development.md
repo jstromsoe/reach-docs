@@ -63,7 +63,7 @@ Default **reach** user's home directory contains following directories:
 * **logs** directory is the default path for storing RTKLIB output and raw data logs
 * A hidden **.reach** directory that a save file **rtk_state**
 
-<font color="red">It is very important not to change anything in these directories, as the software relies on the created directory structure.</font>
+> It is very important not to change anything in these directories, as the software relies on the created directory structure.
 
 ### Software structure
 

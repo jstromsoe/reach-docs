@@ -2,9 +2,9 @@
 
 In this quick tutorial we will show you how to two set up two Reach devices as a base and a rover with correction link over Wi-Fi.
 
-**If you encounter any issues performing these steps, please take a look at our [troubleshooting guide](troubleshooting.md). If your problem is not covered, we will be happy to help at our [community forums](http://community.emlid.com/).**
+> **If you encounter any issues performing these steps, please take a look at our [troubleshooting guide](troubleshooting.md). If your problem is not covered, we will be happy to help at our [community forums](http://community.emlid.com/).**
 
-<font color="red"> Please note that this tutorial covers only one of the numerous setup options. To understand how to make a different setups please read the following sections in the docs: </font>
+This tutorial only covers on use case. To get more information, follow these links:
 
 * [Mechanical specs](mechanical-specs.md)
 * [Electrical specs](electrical-specs.md)
@@ -21,7 +21,7 @@ More on power supply [here](power-supply.md).
 
 Plug antenna cable into MCX socket on Reach. Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building. There should be no obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
 
-<font color="red">Do not test the device indoors or near buildings, do not cover the skyview for the antennas with laptops, cars or yourself. RTK requires good satellite visibility and reception.</font>
+> Do not test the device indoors or near buildings, do not cover the skyview for the antennas with laptops, cars or yourself. RTK requires good satellite visibility and reception.
 
 A guide how to properly place the antennas is available in [Antenna Placement](antenna-placement.md) section.
 
@@ -63,7 +63,7 @@ Open a web browser on your smartphone, tablet or laptop and type IP address of R
 
 To do this, make sure Reach is connected to a Wi-Fi network with Internet access. Go to the Logs page and press the **Update** button. ReachView will go inactive for about a minute. To reconnect, close the current tab and try to open ReachView in a new one. It is preferred to use Reach's IP address instead of **reach.local** to connect after an update.
 
-***Perform an update for both Reach devices.***
+***Perform the update for both Reach devices.***
 
 <font color="red">From this point, it is considered that you performed the update.</font>
 
