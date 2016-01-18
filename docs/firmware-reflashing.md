@@ -5,7 +5,7 @@ Please note that you don't need to do this unless you want to bring Reach to its
 Most new features are released via ReachView app updates that can be updated simply by pressing an "Update" button in its interface.
 More information on how to update ReachView app is available in [ReachView App docs section](reachview-app.md).
 
-#### Emlid Reach RTK firmware download
+##### Emlid Reach RTK firmware download
 
 We provide a special, enhanced Intel Edison image with following changes:
 
@@ -19,13 +19,15 @@ While Reach units are flashed before shipping, we plan to update the image in th
 
 There are two ways to flash the image. Intel's GUI Phone Flash Tool Lite and a CLI script.
 
-#### Flashing Reach from GUI
+### Flashing process
 
-##### Getting Intel Phone Flash Tool Lite
+#### GUI guide
 
-You can get the tool [here](https://software.intel.com/en-us/iot/hardware/edison/downloads). It is available for Windows, Mac and Linux. If you are running Windows, you will also need to install the drivers provided on the same page.
+###### Getting Intel Phone Flash Tool Lite
 
-##### Flashing Reach
+You can get the tool [here](https://software.intel.com/en-us/iot/hardware/edison/downloads). It is available for Windows, Mac and Linux.
+
+###### Flashing Reach
 
 Before flashing:
 
@@ -47,9 +49,9 @@ After this:
 
 ![flash](img/firmware-reflashing/flash.png)
 
-#### Flashing Reach from Terminal
+#### Terminal guide
 
-##### Windows
+###### Windows
 
 Before flashing:
 
@@ -65,7 +67,7 @@ To flash:
 4. Monitor progress in the terminal window
 5. Proceed to "After flashing"
 
-##### Mac OS X
+###### Mac OS X
 
 Before flashing:
 
@@ -82,7 +84,7 @@ To flash:
 4. Monitor progress in the terminal window
 5. Proceed to "After flashing"
 
-##### Linux
+###### Linux
 
 Before flashing:
 
@@ -97,7 +99,7 @@ To flash:
 4. Monitor progress in the terminal window
 5. Proceed to "After flashing"
 
-#### After flashing
+### After flashing
 
 After the initial process is done, Reach will reboot. **Do not unplug it until it reboots and goes through the initial setup process completely**.
 
