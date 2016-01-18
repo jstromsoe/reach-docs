@@ -29,6 +29,7 @@ You can get the tool [here](https://software.intel.com/en-us/iot/hardware/edison
 
 Before flashing:
 
+0. If you are running Windows, install [Intel Edison drivers](http://downloadmirror.intel.com/24909/eng/IntelEdisonDriverSetup1.2.1.exe)
 1. Unzip the image
 2. Open the Phone Flash Tool Lite
 3. Choose correct path to the unzipped image(You will need to point it to a **.json** file inside)
@@ -52,7 +53,7 @@ After this:
 
 Before flashing:
 
-* Install Intel Edison drivers
+* Install [Intel Edison drivers](http://downloadmirror.intel.com/24909/eng/IntelEdisonDriverSetup1.2.1.exe)
 * Unzip downloaded image
 * Unplug Reach if it's plugged in
 
