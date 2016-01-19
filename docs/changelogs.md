@@ -23,6 +23,11 @@
 
 ### Reach image changelog
 
+#### v1.2 p1
+
+* Removed extra configuration files
+* Fixed base not being able to use the same TCP port immediately after restart
+
 #### v1.2
 
 * Fixed the issue with unreliable Wi-Fi setup(mostly known as "Password does not match issue")
