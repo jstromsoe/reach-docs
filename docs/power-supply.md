@@ -1,6 +1,6 @@
 ### How to power Reach RTK
 
-Emlid Reach RTK module can be powered using Micro-USB port or DF13 ports. Power circuit is shared for all ports, so when you power the device over one port it will pass power to other ports.
+Emlid Reach RTK module can be powered using **Micro-USB** port or **DF13** ports. Power circuit is shared for all ports, so when you power the device over one port it will pass power to other ports.
 
 > **IMPORTANT**
 

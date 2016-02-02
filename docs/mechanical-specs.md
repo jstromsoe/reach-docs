@@ -2,15 +2,7 @@
 
 Reach RTK module is a tiny device, it is only a few millimeters larger than Intel Edison that it houses.
 
-| Dimension | Length | Width | Height |   
-|-----------|--------|-------|--------|
-| Size (mm) |  45.5  |   27  |   9.2  |
-
-![image](img/mechanical-specs/reach-top-view.png)
-
-### Weight
-
-Weight of Reach is 14 grams.
+![reach-dimensions](img/mechanical-specs/reach-dimensions.png)
 
 ### Connectors mating parts
 
