@@ -21,7 +21,7 @@ To connect UART radio to Reach use upper DF13 port (the one near the USB).
 
 ##### 3DR Radio
 
-![reach-rfd900-radio](img/hardware-integration/reach-rfd900-radio.png)
+![reach-3dr-radio](img/hardware-integration/reach-3dr-radio.png)
 
 Connection diagram for 3DR Radio v2:
 
