@@ -8,9 +8,9 @@ Antenna needs to have a clear skyview 30 degrees above the horizon. There should
 
 ![skyview-obstacles.png](img/antenna-placement/skyview-obstacles.png)
 
-Examples of bad environments for antenna placement: indoors, urban areas, forest.
+Examples of **bad** environments for antenna placement: indoors, urban areas, forest.
 
-Examples of **good** environments for antenna placement: field, top of the hill, rooftop of the building.
+Examples of **good** environments for antenna placement: field, top of the hill, rooftop of a building.
 
 #### No electronics nearby
 
