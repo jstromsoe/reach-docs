@@ -1,5 +1,11 @@
 ### ReachView changelog
 
+#### v0.0.5
+
+* Automatic log conversion to RINEX
+* Fixed the issue, where base mode would not restart immediately
+* Small visual updates and bugfixes
+
 #### v0.0.4
 
 * Default receiver settings have been changed
