@@ -14,7 +14,7 @@ You can power Reach over Micro-USB cable using power supplies like:
 * USB wall adapter
 * Computer USB ports
 
-![power_supply_options.png](img/power-supply/power_supply_options.png)
+![power-supply-options.png](img/power-supply/power-supply-options.png)
 
 When you power Reach over Micro-USB port it can then provide power to devices connected to DF13 ports (e.g. radios).
 
