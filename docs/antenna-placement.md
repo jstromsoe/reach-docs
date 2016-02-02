@@ -6,6 +6,8 @@ You can place your smartphone near the window in your house and it will obtain G
 
 Antenna needs to have a clear skyview 30 degrees above the horizon. There should be no obstacles that could block the view like: buildings, trees, cars, humans, laptops etc.
 
+![skyview_obstacles.png](img/antenna_placement/skyview_obstacles.png)
+
 Examples of bad environments for antenna placement: indoors, urban areas, forest.
 
 Examples of **good** environments for antenna placement: field, top of the hill, rooftop of the building.
