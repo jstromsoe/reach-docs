@@ -1,3 +1,5 @@
+### A well-placed antenna is crucial to achieve good RTK positioning results
+
 You can place your smartphone near the window in your house and it will obtain GPS coordinates after some time, but for RTK such environment won't be sufficient. For RTK to work there are special requirements for antenna placement that are much more strict that for a standalone GPS.
 
 #### No obstacles blocking the skyview
@@ -17,3 +19,5 @@ Electronic devices may produce RF noise that could affect reception of the GPS s
 Antenna has to be placed on a ground plane which reduces multipath, provides shielding and improves signal reception. Ground plane is a conductive plate, it may be a piece of metal, a roof of a car, a metal roof of a building, etc.
 
 Tallysman TW4721 requires ground plane no less than 70x70mm.
+
+![antenna_ground_plane.png](img/antenna_placement/antenna_ground_plane.png)
