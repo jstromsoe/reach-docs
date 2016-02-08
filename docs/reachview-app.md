@@ -78,7 +78,6 @@ There are several ways to stream it:
 * TCP server. Set up a port listening for incoming connections
 * TCP client. Connect to a TCP server
 * Ntrip client.
-* Ntrip server.
 
 ##### Base RTCM3 output messages
 
@@ -145,8 +144,6 @@ Paths, specific to input stream:
 * ftp. Enter a **URL**
 
 Paths, specific to output streams:
-
-* NTRIP server. Create your own NTRIP caster. Required option is a port, on which the stream will be served. You can include a password to protect your data.
 
 Under **Advanced settings** you can see much more parameters for fine-tuning RTK performance.
 
