@@ -1,5 +1,14 @@
 ### ReachView changelog
 
+#### v0.1.0
+
+* Updated log tab looks
+* Added reboot and turn off wi-fi buttons to settings tab
+* Added image version to settings tab
+* Added RINEX version chooser to settings tab
+* Serial ports are now are now chosen from a select control
+* Bugfixes
+
 #### v0.0.5
 
 * Automatic log conversion to RINEX
