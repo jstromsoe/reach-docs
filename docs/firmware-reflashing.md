@@ -15,7 +15,7 @@ We provide a special, enhanced Intel Edison image with following changes:
 
 While Reach units are flashed before shipping, we plan to update the image in the future. You can get the latest version here:
 
-[**Reach Image v1.2**](http://files.emlid.com/data/public/43c706)
+[**Reach Image v1.2**](http://files.emlid.com/images/ReachImage_v1.2.zip)
 
 There are two ways to flash the image. Intel's GUI Phone Flash Tool Lite and a CLI script.
 
