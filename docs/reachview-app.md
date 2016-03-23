@@ -10,7 +10,7 @@ For example:
 
 #### Connecting Reach to your Wi-Fi network
 
-After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Choose your Wi-Fi network (e.g. a hotspot on your smartphone) and enter a password. Hit **Submit** and wait for a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
+After connecting to the network hosted by Reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Choose your Wi-Fi network (e.g. a hotspot on your smartphone) and enter a password. Hit **Submit** and wait for a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
 
 ![reach_wifi_setup.png](img/reachview-app/reach_wifi_setup.png)
 
@@ -18,11 +18,11 @@ After connecting to the network hosted by reach, open a web browser on your smar
 
 #### Resolving IP address
 
-After connecting Reach to an existing network, you will need to find it's IP address.
+After connecting Reach to an existing network, you will need to find its IP address.
 
 Good to remember:
 
-* If you are on Reach's self-hosted network, it's IP is always **192.168.42.1**
+* If you are on Reach's self-hosted network, its IP is always **192.168.42.1**
 * If there is only one Reach unit on the network, it should be accessible by **reach.local** address
 
 If these are not the case, you will need to scan your local network. In most of these apps, Reach units will show up as **Murata Manufacturing Co.** device.
@@ -85,13 +85,13 @@ A number of output messages is supported, you can find more information about th
 
 ##### Base coordinates
 
-**This is a key point in getting good results.** Reach in base mode needs to know it's coordinates. Best practice is setting up base on a well-known position(coordinates determined by RTK) as this directly affects positioning results.
+**This is a key point in getting good results.** Reach in base mode needs to know its coordinates. Best practice is setting up base on a well-known position (coordinates determined by RTK) as this directly affects positioning results.
 
 Coordinates are entered in llh format. **By default, if no coordinates were entered, Reach in base mode is configured to wait for single solution, get the coordinates and use them as base's position.** Keep in mind that single positioning mode is far less accurate.
 
 Why are base coordinates so important?
 
-To achieve **good absolute positioning** results on the rover, base needs to know it's position accurately. RTK algorithms calculate a vector pointing from base's location(basically, the coordinates you enter here) to rover. Then, rover's absolute position is determined using this vector and base coordinates. That means that rover's **absolute** position will be just as accurate as the base's **absolute** coordinates.
+To achieve **good absolute positioning** results on the rover, base needs to know its position accurately. RTK algorithms calculate a vector pointing from base's location (basically, the coordinates you enter here) to rover. Then, rover's absolute position is determined using this vector and base coordinates. That means that rover's **absolute** position will be just as accurate as the base's **absolute** coordinates.
 
 However, if you are only interested in rover's **relative** position accuracy, you may use a less accurate position for the base.
 
@@ -105,7 +105,7 @@ Unlike the base mode, rover has a lot more settings to work with and uses **conf
 
 ![config_chooser.png](img/reachview-app/config_chooser.png)
 
-You may choose the configuration file from the dropdown menu. Reach comes with several pre-defined default configs, such as **reach\_single\_default.conf** and **reach\_kinematic\_default.conf**. The menu(three dot) button allows to reset these configs to initial state, so you are free to mingle around in them. You can also copy them using "**Save As..**" button.
+You may choose the configuration file from the dropdown menu. Reach comes with several pre-defined default configs, such as **reach\_single\_default.conf** and **reach\_kinematic\_default.conf**. The menu (three dot) button allows to reset these configs to initial state, so you are free to mingle around in them. You can also copy them using "**Save As..**" button.
 
 ###### Configuration parameters
 
@@ -118,7 +118,7 @@ By default you can only see the most important ones:
     * Kinematic. Base corrections will be used to improve positioning. The rover is assumed to be moving. This is the main RTK mode
     * Static. Base corrections will be used to improve positioning. The rover is assumed **not** to be moving.
 * Used positioning systems. Choose which GNSS are used
-* Base antenna coordinates. Default value is "rtcm", meaning base is broadcasting it's coordinates
+* Base antenna coordinates. Default value is "rtcm", meaning base is broadcasting its coordinates
 
 ###### Data streams
 
@@ -132,10 +132,10 @@ All these streams have a number of paths to directed to. Some paths are common, 
 
 Common stream paths include:
 
-* Serial connection. For Reach's UART port use "**ttyMFD2**" device and a baud rate of the connected accessory. For USB devices, use "**ttyUSB0**" and a random baud rate(it will be ignored)
+* Serial connection. For Reach's UART port use "**ttyMFD2**" device and a baud rate of the connected accessory. For USB devices, use "**ttyUSB0**" and a random baud rate (it will be ignored)
 * TCP server. Listen to TCP connections on a specified **port**
 * TCP client. Connect to TCP server listening on a certain **IP address** and **port**
-* File. Specify a **path to a file** on Reach. This is particularly useful for logs. By default, when you choose log output path to be a file, you get a default path to a file which contains current date and time mask. Writing logs to this default file path will make them available in the **Logs** tab later(refresh page after stopping rover)
+* File. Specify a **path to a file** on Reach. This is particularly useful for logs. By default, when you choose log output path to be a file, you get a default path to a file which contains current date and time mask. Writing logs to this default file path will make them available in the **Logs** tab later (refresh page after stopping rover)
 
 Paths, specific to input stream:
 
@@ -158,10 +158,10 @@ Set up a correction stream.
 
 **Status** tab is the place to monitor current state of the positioning solution. First thing you see is a chart showing rover's satellite levels. Good reception of the satellite signal is essential for RTK technology to be able to produce a good positioning solution. This chart is intended to help with antenna placement. If you are in mode that involves base corrections and the input is setup correctly, you will see base satellite levels as well. The grid above the chart shows current state as the current positioning mode, solution status and coordinates in llh format.
 
-The solution status value(simply labeled **status** in the grid) is the key value you can see here. After you have started the rover, you will be able to get the following solution statuses(probably in this order):
+The solution status value (simply labeled **status** in the grid) is the key value you can see here. After you have started the rover, you will be able to get the following solution statuses (probably in this order):
 
 * **"-"**. This means there is not information for the software to process. Either not enough time has passed or the antenna is poorly placed
-* **single**. This is usually the state that follows **"-"** in RTK mode. **Single** means that rover has found a solution relying on it's own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result
+* **single**. This is usually the state that follows **"-"** in RTK mode. **Single** means that rover has found a solution relying on its own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result
 * **float**. The base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved
 * **fixed**. Positioning is relative to the base and the integer ambiguity is properly resolved. This is as good as it gets, **fix** solution status indicates high level of positioning precision
 
@@ -179,7 +179,7 @@ During configuration and non-RTK solution status, Reach will show debug informat
 * Are we started?
     * <font color="green">Yes</font>
     * <font color="red">No</font>
-* Solution status(N/A to base)
+* Solution status (N/A to base)
     * <font color="red">"-"</font>
     * <font color="cyan">single</font>
 
