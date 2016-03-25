@@ -11,6 +11,9 @@ pages:
 - Power supply: power-supply.md
 - Antenna placement: antenna-placement.md
 - ReachView app: reachview-app.md
+- Setting up correction link: reachview-link.md
+- RTK configuration: reachview-configuration.md
+- Monitoring status: reachview-status.md
 - Hardware integration: hardware-integration.md
 - PylonGPS: pylon-gps.md
 - Firmware reflashing: firmware-reflashing.md
