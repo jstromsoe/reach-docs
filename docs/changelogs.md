@@ -1,5 +1,22 @@
 ### ReachView changelog
 
+#### v0.1.4
+
+* Added Emlid favicon to the app
+
+#### v0.1.3
+
+* ReachView will now show a blocking warning message when Reach is disconnected
+
+#### v0.1.2
+
+* Added more headers to disable caching in browsers
+
+#### v0.1.1
+
+* Set system time according to NTP(if available) or GPS on startup
+* ReachView will start processing/logging until time is set
+
 #### v0.1.0
 
 * Updated log tab looks
