@@ -17,8 +17,8 @@ In the following table you will find Reach RTK feature status. The table will be
 | Downloading logs in UBX             | Done        |
 | Downloading logs in RINEX           | Done        |
 | Pixhawk integration                 | In progress |
-| Bluetooth output                    | In progress |
+| Bluetooth output                    | Done        |
 | Automatic average base coordinates  | In progress |
 | Base satellite level visualization  | In progress |
-| Converting events to RINEX          | To do       |
+| Converting events to RINEX          | In progress |
 | Camera trigger                      | To do       |
