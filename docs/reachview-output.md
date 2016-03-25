@@ -46,10 +46,27 @@ Since version **v0.2.2** of ReachView, you can choose bluetooth as an output for
 
 To use the Bluetooth GPS app with Reach you need to do the following:
 
-1. Pair your Android device with Reach.
+* Pair your Android device with Reach.
 
-To do this, make your device discoverable. Then, go to the **Settings tab** and hit scan in the bluetooth section. Once your device appears in the "discoverable" section, hit it to send a pairing request.
+To do this, make your device discoverable. Then, go to the **Settings tab** and hit scan in the bluetooth section. Once your device appears in the "discoverable" section, hit it to send a pairing request. Accept the pairing request on your device. Your device will appear in the "paired devices section".
 
+![paired-bluetooth-devices.png](img/reachview-app/paired-bluetooth-devices.png)
+
+* Set "Solution output" to bluetooth and "Solution format" to **NMEA**.
+
+![bluetooth-solution.png](img/reachview-app/bluetooth-solution.png)
+
+* Open up **Bluetooth GPS** and go to the settings. To connect to Reach, you will need to set an option called "Connection workaround"
+
+![bluetooth-gps-settings.png](img/reachview-app/bluetooth-gps-settings.png)
+
+* Go to the main screen, choose "reach" in the device list and hit "Connect"
+
+![bluetooth-gps-main.png](img/reachview-app/bluetooth-gps-main.png)
+
+* Enjoy your RTK data!
+
+![bluetooth-gps-satellites.png](img/reachview-app/bluetooth-gps-satellites.png)
 
 
 
