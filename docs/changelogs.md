@@ -1,5 +1,18 @@
 ### ReachView changelog
 
+#### v0.2.2
+
+* Fix not starting properly without an internet connection
+
+#### v0.2.1
+
+* Fix an issue where users with older ReachView version could not update correctly
+
+#### v0.2.0
+
+* Add support for bluetooth scanning and pairing via ReachView
+* Enable bluetooth solution and log output
+
 #### v0.1.4
 
 * Added Emlid favicon to the app
