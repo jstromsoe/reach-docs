@@ -9,7 +9,7 @@ This tutorial only covers on use case. To get more information, follow these lin
 * [Mechanical specs](mechanical-specs.md)
 * [Electrical specs](electrical-specs.md)
 * [Hardware integration](hardware-integration.md)
-* [ReachView app](reachview-app.md)
+* [ReachView app](reachview-basics.md)
 
 ### Powering up
 
@@ -49,7 +49,7 @@ After connecting Reach devices to an existing Wi-Fi network, you will need to id
 
 If your device supports Bonjour discovery, you can access Reach with "reach.local" address. However, with two devices on the network only one will respond to "reach.local".
 
-Read more on resolving IP addresses in the [ReachView section](reachview-app.md).
+Read more on resolving IP addresses in the [ReachView section](reachview-basics.md).
 
 ![fing.png](img/quickstart/fing.png)
 
@@ -135,4 +135,4 @@ Connect using File -> Connect
 
 ### More reading
 
-Congratulations on finishing the quickstart tutorial! Continue to learn about setting up different correction links in the [ReachView section](reachview-app.md).
+Congratulations on finishing the quickstart tutorial! Continue to learn about setting up different correction links in the [ReachView section](reachview-basics.md).
