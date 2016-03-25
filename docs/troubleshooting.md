@@ -26,7 +26,7 @@ When trying to connect Reach to your network via network setup, after you hit th
 
 ### “Reach.local” unreachable
 
-1) Try to determine whether Reach is connected to your network(Detailed guide can be found [here](reachview-app.md).
+1) Try to determine whether Reach is connected to your network(Detailed guide can be found [here](reachview-basics.md).
 
 2) Try to connect to ReachView via an IP address(make sure this is Reach's IP and it's pingable)
 
