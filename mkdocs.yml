@@ -16,6 +16,7 @@ pages:
 - Solution output and logging: reachview-output.md
 - Monitoring status: reachview-status.md
 - Hardware integration: hardware-integration.md
+- APM integration: apm-integration.md
 - PylonGPS: pylon-gps.md
 - Firmware reflashing: firmware-reflashing.md
 - Electrical specs: electrical-specs.md
