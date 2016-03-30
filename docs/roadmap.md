@@ -22,3 +22,4 @@ In the following table you will find Reach RTK feature status. The table will be
 | Base satellite level visualization  | In progress |
 | Converting events to RINEX          | In progress |
 | Camera trigger                      | To do       |
+| IMU integration                     | To do       |
