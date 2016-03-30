@@ -31,14 +31,20 @@ Note that you can change RINEX version to convert to in the **settings tab**.
 
 ### Solution output options
 
-> Solution output allows RTK enhanced coordinates to be passed on in **llh, xyz, enu and nmea** formats
+> Solution output allows RTK enhanced coordinates to be passed on in **llh, xyz, enum, nmea and erb** formats
 
 Just as with raw data logging, solution can be directed to the same destinations
 
 * **File**. Solution files are also available via the logs tab
 * **Tcp server or client**. A nice way to monitor your results is connecting via RTKPLOT later
-* **Serial**. USB or UART serial devices
+* **Serial**. USB or UART serial devices, like 3DR radio
 * **Bluetooth**. This is a special option as it allows **Reach solution to be used on Android devices as a location source**. This is known as "mock location".
+
+###### Passing RTK solution to an APM autopilot
+
+> Since ReachView version **0.3.0** Reach adds support to output RTK solution to Navio and Pixhawk autopilots
+
+To do this, simply select **erb** solution output **format** in the ReachView configuration tab. Read more on APM integration here.
 
 ###### Bluetooth output and Android mock location
 
