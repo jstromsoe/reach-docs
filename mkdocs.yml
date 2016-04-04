@@ -11,10 +11,11 @@ pages:
 - Power supply: power-supply.md
 - Antenna placement: antenna-placement.md
 - ReachView app basics: reachview-basics.md
-- RTK configuration: reachview-configuration.md
+- Rover configuration: reachview-rover.md
 - Setting up correction link: reachview-link.md
 - Solution output and logging: reachview-output.md
 - Monitoring status: reachview-status.md
+- Base configuration: reachview-base.md
 - Hardware integration: hardware-integration.md
 - APM integration: apm-integration.md
 - PylonGPS: pylon-gps.md
