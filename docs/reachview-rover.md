@@ -1,6 +1,6 @@
 ### Rover configuration
 
-In RTK terminology, **Rover** is the receiver that moves and gets it's coordinates enhaced via corrections coming from a **Base** unit. To configure Reach as a Rover, navigate to **Config** tab and choose **Rover** mode in the upper selector. Wait for the app to fetch current rover settings.
+In RTK terminology, **Rover** is the receiver that moves and gets it's coordinates enhanced via corrections coming from a **Base** unit. To configure Reach as a Rover, navigate to **Config** tab and choose **Rover** mode in the upper selector. Wait for the app to fetch current rover settings.
 
 ##### Working with configuration files
 
@@ -16,11 +16,11 @@ The three-dot menu provides some additional functionality with these files, such
 
 > Selecting a different config file does not mean it's loaded on the device.
 
-**To load a configuration file to Reach**, press "**Save**" and then "**Yes**" in the popup window.
+**To load a configuration file to Reach**, press "**Save**" and then "**Yes**" in the pop-up window.
 
 ![load-config-rover.png](img/reachview-rover/load-config-rover.png)
 
-#### Rover configuration parameters
+#### Rover parameters
 
 ##### RTK & GNSS parameters
 

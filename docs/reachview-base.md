@@ -1,31 +1,43 @@
-#### Setting up base station
+### Base mode capabilities
+
+At the moment, base mode capabilities are limited to outputting the corrections to a single destination. However, multiple outputs, as well as satellite levels and automatic average base position are in our [roadmap](roadmap.md).
+
+### Base configuration
 
 **Base** mode allows Reach to send RTK corrections. To configure Reach as a Base, go to **Config** tab and choose **Base** in the upper selector.
 
-###### Base output settings
+Base mode has significantly less settings. It also does not use configuration files. Let's take a look at the **Config** tab:
 
-Reach in base mode only supports RTCM3 data output.
+![base-mode.png](img/reachview-base/base-mode.png)
 
-There are several ways to stream it:
+#### Base parameters
 
-* Serial connection. This option is used for two things: UART connection on the [upper DF-13 connector](hardware-integration.md) and USB devices with serial protocol, like USB radio
-* File. It is best to specify `/home/reach/logs/filename` path
-* TCP server. Set up a port listening for incoming connections
-* TCP client. Connect to a TCP server
-* Ntrip client.
+##### Output destination
 
-###### Base RTCM3 output messages
+> Reach in base mode only supports **RTCM3** data output.
 
-A number of output messages is supported, you can find more information about them [here](http://www.geopp.de/rtcm-3-x-message-types/).
+There are several ways to stream base corrections:
 
-###### Base coordinates
+* Serial connection
+* TCP connection
+* File
 
-**This is a key point in getting good results.** Reach in base mode needs to know its coordinates. Best practice is setting up base on a well-known position (coordinates determined by RTK) as this directly affects positioning results.
+You can read about the first two in the [correction link](reachview-link.md) section. The file option will store a log on the device. Once you stop the base, it will be available in the **Logs** tab as a **"Base"** log.
 
-Coordinates are entered in llh format. **By default, if no coordinates were entered, Reach in base mode is configured to wait for single solution, get the coordinates and use them as base's position.** Keep in mind that single positioning mode is far less accurate.
+##### RTCM3 messages
+
+You can configure which RTCM3 messages to send. This may be helpful if your correction link cant handle the data load. Full message description can be found here [here](http://www.geopp.de/rtcm-3-x-message-types/).
+
+![rtcm3-messages.png](img/reachview-base/rtcm3-messages.png)
+
+##### Base coordinates
+
+**This is a key point in getting good results**. Reach in base mode needs to know its coordinates. Best practice is setting up base on a well-known position (coordinates determined by RTK) as this directly affects positioning results.
 
 Why are base coordinates so important?
 
 To achieve **good absolute positioning** results on the rover, base needs to know its position accurately. RTK algorithms calculate a vector pointing from base's location (basically, the coordinates you enter here) to rover. Then, rover's absolute position is determined using this vector and base coordinates. That means that rover's **absolute** position will be just as accurate as the base's **absolute** coordinates.
 
 However, if you are only interested in rover's **relative** position accuracy, you may use a less accurate position for the base.
+
+![coordinates.png](img/reachview-base/coordinates.png)

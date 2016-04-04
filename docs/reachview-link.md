@@ -36,6 +36,6 @@ NTRIP, or Networked Transport of RTCM via Internet Protocol, is a protocol, used
 
 Typically, connecting to a NTRIP caster will require several pieces of information: **IP address**, **port**, **mount point**, **username** and an optional **password**.
 
-Note the **"Transmit NMEA GPGGA messages to Base stations"** option. This is required by some NTRIP casters for a feature called **Virtual Reference Station**. **VRS** will emulate a base station close to the Rover device depending on it's position. To enable this, choose **"single"**. You can also manully set a fixed position with the **"llh"** option.
+Note the **"Transmit NMEA GPGGA messages to Base stations"** option. This is required by some NTRIP casters for a feature called **Virtual Reference Station**. **VRS** will emulate a base station close to the Rover device depending on it's position. To enable this, choose **"single"**. You can also manually set a fixed position with the **"llh"** option.
 
 ![ntrip.png](img/reachview-link/ntrip.png)
