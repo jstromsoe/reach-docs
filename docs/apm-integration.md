@@ -37,17 +37,19 @@ To load these settings, hit the **Save** button at the top, then agree to load t
 
 ![reach-settings.png](img/apm-integration/reach-settings.png)
 
-#### Setting up a correction link between a base station and drone-mounted rover
+#### Setting up a correction link
 
 Reach supports a number of ways to accept [base corrections](reachview-link.md), including the popular in UAV area serial radios. However, having a separate radio link for base corrections only is highly ineffective.
 
-To solve this, you can use the telemetry radio as a carrier for RTK corrections. GCS can pass these corrections to the autopilot with a feature called **GPS inject**. This funcionality is available in **Mission planner** starting from **version 1.3.35**.
+To solve this, you can use the telemetry radio as a carrier for RTK corrections. GCS can pass these corrections to the autopilot with a feature called **GPS inject**. This funcionality is available in **Mission planner** only.
 
 ##### Configuring radio for embedding corrections into telemetry
 
+With default settings radio telemetry is not optimised for sending RTK corrections. This may cause correction data delivery delays and even loss. These slips will deteriorate RTK solution quality, so we need to minimize them.
+
 > Radio configuration is done with telemetry disconnected.
 
-Up next is some radio configuration. To change radio settings, make sure **Mavlink connection is disabled**. Then, go to **Initial setup** menu, and select **Sik Radio** in the side menu. Click **Load settings** and wait for the parameters of both radios to load.
+To change radio settings, make sure **Mavlink connection is disabled**. Then, go to **Initial setup** menu, and select **Sik Radio** in the side menu. Click **Load settings** and wait for the parameters of both radios to load.
 
 You need to clear the field **ECC** and choose **Raw Data** in the Mavlink select field.
 

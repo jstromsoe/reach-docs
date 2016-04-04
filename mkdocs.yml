@@ -11,8 +11,8 @@ pages:
 - Power supply: power-supply.md
 - Antenna placement: antenna-placement.md
 - ReachView app basics: reachview-basics.md
-- Setting up correction link: reachview-link.md
 - RTK configuration: reachview-configuration.md
+- Setting up correction link: reachview-link.md
 - Solution output and logging: reachview-output.md
 - Monitoring status: reachview-status.md
 - Hardware integration: hardware-integration.md
