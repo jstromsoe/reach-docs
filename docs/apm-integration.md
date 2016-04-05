@@ -4,6 +4,9 @@ Since ReachView version **0.3.0** Reach supports RTK-enhanced coordinates output
 
 Although **ERB** support has already been added to APM master, there was no release yet to include it. Therefore we provide stable binaries with ERB support for all the APM supported vehicles. You can find them [here](http://files.emlid.com/apm/px4-reach.zip).
 
+Here is a demo video with our results:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oq9H19ikAdM" frameborder="0" allowfullscreen></iframe>
+
 The setup we recommend goes as follows:
 
 * Base stations is a Reach unit in Wi-Fi AP mode, configured as a TCP server
