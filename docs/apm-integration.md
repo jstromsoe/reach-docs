@@ -1,8 +1,8 @@
 ### APM integration
 
-Since ReachView version **0.3.0** Reach supports RTK-enhanced coordinates output to Navio and Pixhawk autopilots. To make this possible, we implemented a custom gps protocol we call **ERB**(Emlid Reach binary protocol).
+Since ReachView version **0.3.0** Reach supports RTK-enhanced coordinates output to Navio and Pixhawk autopilots. To make this possible, we implemented a custom gps protocol we call **ERB**(Emlid Reach Binary protocol).
 
-Although **ERB** support has already been added to APM master, there was no release yet to include it. Therefore we provide stable binaries with ERB support for all the APM supported vehicles. You can find them [here]().
+Although **ERB** support has already been added to APM master, there was no release yet to include it. Therefore we provide stable binaries with ERB support for all the APM supported vehicles. You can find them [here](http://files.emlid.com/apm/px4-reach.zip).
 
 The setup we recommend goes as follows:
 
