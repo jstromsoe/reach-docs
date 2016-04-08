@@ -23,3 +23,31 @@ This 3D model can be used as a reference for case design. Please note that Reach
 <script src="https://embed.github.com/view/3d/emlid/hardware/master/Reach.STL"></script>
 
 During case design keep in mind that you should not place anything close to the Wi-Fi antenna or performance might be degraded. Try to leave at least 5mm of distance to the closest object.
+
+### 3D cases
+
+![reach_in_case](img/mechanical-specs/reach_in_case.jpg)
+
+
+The following printable 3D cases are available for Reach users:
+
+**Reach case model C:**
+
+<script src="https://embed.github.com/view/3d/emlid/hardware/master/Reach_cases/Reach_case_assembly_Rev_C.STL"></script>
+
+Download [top and bottom halfes](https://github.com/emlid/hardware/tree/master/Reach_cases/Rev_C_parts) of the case to print it.
+
+**Reach case model D:**
+
+<script src="https://embed.github.com/view/3d/emlid/hardware/master/Reach_cases/Reach_case_assembly_Rev_D.STL"></script>
+
+Download [top and bottom halfes](https://github.com/emlid/hardware/tree/master/Reach_cases/Rev_D_parts) of the case to print it.
+
+**Reach case model E:**
+
+<script src="https://embed.github.com/view/3d/emlid/hardware/master/Reach_cases/Reach_case_assembly_Rev_E.STL"></script>
+
+Download [top and bottom halfes](https://github.com/emlid/hardware/tree/master/Reach_cases/Rev_E_parts) of the case to print it.
+
+For assebmly cases D and E use DIN-7981 screw (thread size 2.2 mm, length either 6.5 or 9.5 mm).
+Model C can be assembled using scotch tape.
