@@ -1,17 +1,27 @@
 ### ReachView changelog
 
+#### v0.3.1
+
+* Added Dynamic filter option to the rover's general tab.
+* Fixed an issue where bluetooth.service file could be corrupted
+* Added USB baud rate option
+
+#### v0.3.0
+
+* Added ERB protocol support for Pixhawk integration
+
 #### v0.2.2
 
-* Fix not starting properly without an internet connection
+* Fixed not starting properly without an internet connection
 
 #### v0.2.1
 
-* Fix an issue where users with older ReachView version could not update correctly
+* Fixed an issue where users with older ReachView version could not update correctly
 
 #### v0.2.0
 
-* Add support for bluetooth scanning and pairing via ReachView
-* Enable bluetooth solution and log output
+* Added support for bluetooth scanning and pairing via ReachView
+* Enabled bluetooth solution and log output
 
 #### v0.1.4
 
