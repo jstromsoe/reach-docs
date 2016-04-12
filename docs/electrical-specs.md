@@ -8,7 +8,7 @@
 | Antenna DC bias                           | 3.3 V                |
 | Antenna output current                    | 100 mA               |
 | Max current consumption @5V               | 500 mA               |
-| Normal current consumption @5V            | 200 ma               |
+| Normal current consumption @5V            | 200 mA               |
 | Current limit on USB OTG                  | 1000 mA              |
 | Temperature range                         | 0 +40 C (-40 +85 C)^ |
 
