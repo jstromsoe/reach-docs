@@ -29,5 +29,5 @@ During configuration and non-RTK solution status, Reach will show debug informat
 
 After getting either float or fixed status, Reach LED will only show it with:
 
-* Float with <font color="green">green</font>/<font color="yellow">yellow</font> blinks
+* Float with <font color="green">green</font>/<font color="yellow" style="background-color:grey">yellow</font> blinks
 * Fix with <font color="green">green</font> blinks
