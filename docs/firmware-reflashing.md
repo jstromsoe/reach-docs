@@ -107,5 +107,5 @@ Since image version **1.2**, the LED signals during startup are as follows:
 
 * <font color="magenta">Magenta</font> during device boot
 * Off, then White for a second to show script start
-* Blinking <font color="yellow">Yellow</font> while looking for known networks
+* Blinking <font color="yellow" style="background-color: grey;">Yellow</font> while looking for known networks
 * <font color="green">Green</font> after creating a hotspot
