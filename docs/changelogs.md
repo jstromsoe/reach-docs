@@ -1,5 +1,11 @@
 ### ReachView changelog
 
+#### v0.3.2
+
+* Added space meter to the logs tab
+* RINEX logs now include SNR, doppler frequency and more
+* Minimized probability of Reach forgetting its state
+
 #### v0.3.1
 
 * Added Dynamic filter option to the rover's general tab.
