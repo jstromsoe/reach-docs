@@ -9,7 +9,7 @@ Here is a demo video with our results:
 
 Although **ERB** support has already been added to APM master, there was no release yet to include it. Therefore we provide stable binaries with ERB support for all the APM supported vehicles.
 
-* [Pixhawk firmware compatible with ERB](http://files.emlid.com/apm/px4-reach.zip)
+* [Pixhawk firmware compatible with ERB](https://files.emlid.com/apm/px4-reach.zip)
 
 #### Recommended setup
 
@@ -113,18 +113,3 @@ And port the server port number.
 Finally, check the corrections are coming in.
 
 ![mp-gps-inject-connected.png](img/apm-integration/mp-gps-inject-connected.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
