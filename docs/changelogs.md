@@ -1,5 +1,9 @@
 ### ReachView changelog
 
+#### v0.3.4
+
+* Fixed an issue with Solution output 2 not working by itself
+
 #### v0.3.3
 
 * Updated RINEX conversion timer to be more reailistic
