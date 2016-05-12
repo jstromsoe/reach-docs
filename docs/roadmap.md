@@ -21,6 +21,7 @@ In the following table you will find Reach RTK feature status. The table will be
 | Automatic average base coordinates  | In progress |
 | Base satellite level visualization  | In progress |
 | Base multiple output destinations   | In progress |
-| Converting events to RINEX          | In progress |
+| Converting events to RINEX          | Done        |
+| Post-processing RINEX events        | Done        |
 | Camera trigger                      | To do       |
 | IMU integration                     | To do       |
