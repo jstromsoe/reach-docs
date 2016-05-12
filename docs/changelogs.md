@@ -1,5 +1,9 @@
 ### ReachView changelog
 
+#### v0.4.0
+
+* Added support for UBX time marks when converting logs to RINEX
+
 #### v0.3.4
 
 * Fixed an issue with Solution output 2 not working by itself
