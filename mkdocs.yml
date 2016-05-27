@@ -18,6 +18,7 @@ pages:
 - Base configuration: reachview-base.md
 - Hardware integration: hardware-integration.md
 - APM integration: apm-integration.md
+- GPS post-processing: gps-post-processing.md
 - Camera integration: camera-integration.md
 - PylonGPS: pylon-gps.md
 - Firmware reflashing: firmware-reflashing.md

@@ -40,7 +40,7 @@ Browse to the rover obs (Rinex from your rover Reach), to the base station obs (
 
 ![image](img/post-processing/Post7.PNG)
 
-Now proceed to the options and set positioning mode to Kinematic, that will tell RTKLIB that the receiver was moving. Select used navigation systems and set filter to combined. Enable dynamic filter as well. 
+Now proceed to the options and set positioning mode to Kinematic, that will tell RTKLIB that the receiver was moving. Select used navigation systems and set filter to combined. Enable dynamic filter as well.
 
 ![image](img/post-processing/Post8.PNG)
 
@@ -48,7 +48,7 @@ In this case Glonass ambiguity resolution can be set to ON, as both receivers ar
 
 ![image](img/post-processing/Post9.PNG)
 
-Now we are at the point where we need to enter the coordinates of the base that we have calculated in the previous step. 
+Now we are at the point where we need to enter the coordinates of the base that we have calculated in the previous step.
 
 ![image](img/post-processing/Post10.PNG)
 
@@ -60,7 +60,7 @@ In RTKPLOT go to file-> open observations and select observations from the movin
 
 ![image](img/post-processing/Post12.PNG)
 
-By switching view to Position it is evident that take off is around 14:05 and after this moment signal reception is much better. 
+By switching view to Position it is evident that take off is around 14:05 and after this moment signal reception is much better.
 
 ![image](img/post-processing/Post13.PNG)
 
@@ -72,7 +72,7 @@ Looks really good now!
 
 ![image](img/post-processing/Post15.PNG)
 
-What could have happened if we did not use the exact position of the base, but just averaged single position? This is a close up of three turns, blue track has been processed without exact base position. You can see a deviation of several meters, that is not acceptable for any precise work. 
+What could have happened if we did not use the exact position of the base, but just averaged single position? This is a close up of three turns, blue track has been processed without exact base position. You can see a deviation of several meters, that is not acceptable for any precise work.
 
 ![image](img/post-processing/Post16.PNG)
 
