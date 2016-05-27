@@ -1,16 +1,17 @@
 ### Required data
 
 This tutorial requires:
+
 * RINEX log from the rover, in this case a copter flying a mission with a camera
-* RINEX log from the base station installed in the field near the flying area
-* RINEX observations log from the reference station
-* Optionally: precise ephemeresis and clock files from the IGS
+* RINEX log from the base station installed in range of 10km near the flying area
+* RINEX observations log from the reference station located in range of 100km
+* Optional: precise ephemeris and clock files from the IGS
 
 In order to get accurate rover track an exact position of the base should be known. You either need to place base on a point with known coordinate, or determine it by post-processing base against a reference station. It is better if the station is within 100km range, but longer range might work as well. In this case we have a 30 second RINEX log from UK OSNET station just 19km away.  Almost every country has a network of reference stations and observations are usually publicly available. Averaging of single solution does not help increase accuracy, so this step is crucial to get an accurate track.
 
 ### Calculating base position
 
-Start RTKLIB RTKPost software and enter the fields as shown here. If running for the first time you will need to set mode to Static in the options to unlock the fields for base staiton data. You can skip the start time, it is not compulsory. Browse to the rover obs (Rinex from your base Reach), to the base station obs (Rinex from the OSNET or other local provider) and to the nav (Rinex from your base Reach). You can as well add precise ephemeresis and clocks at this stage. They are required for long baselines.
+Start RTKLIB RTKPOST software and enter the fields as shown here. If running for the first time you will need to set mode to Static in the options to unlock the fields for base staiton data. You can skip the start time, it is not compulsory. Browse to the rover obs (Rinex from your base Reach), to the base station obs (Rinex from the OSNET or other local provider) and to the nav (Rinex from your base Reach). You can as well add precise ephemeresis and clocks at this stage. They are required for long baselines.
 
 ![image](img/post-processing/Post1.PNG)
 
@@ -72,7 +73,7 @@ Looks really good now!
 
 ![image](img/post-processing/Post15.PNG)
 
-What could have happened if we did not use the exact position of the base, but just averaged single position? This is a close up of three turns, blue track has been processed without exact base position. You can see a deviation of several meters, that is not acceptable for any precise work.
+What could have happened if we did not use the exact position of the base, but just averaged single position? This is a close up of three turns, blue track has been processed without exact base position. You can see a shift of several meters.
 
 ![image](img/post-processing/Post16.PNG)
 
