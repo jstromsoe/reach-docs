@@ -4,7 +4,7 @@ This tutorial requires:
 
 * RINEX log from the rover, in this case a copter flying a mission with a camera
 * RINEX log from the base station installed in a range of 10km near a flying area
-* Optional - for correct absolute positioning: RINEX observations log from a reference station located in a range of 100km
+* Optional - for absolute positioning: RINEX observations log from a reference station in a range of 100km
 * Optional - for processing improvement: precise ephemeris and clock files from the IGS
 
 Rover track is calculated relatively to the base station so in order to get rover track with correct absolute coordinates the exact position of the base station should be known. You either need to place base on a point with known coordinate, or determine it by post-processing base against a reference station. It is better if the station is within 100km range, but longer range might work as well. In this case we have a 30 second RINEX log from UK OSNET station just 19km away.  Almost every country has a network of reference stations and observations are usually publicly available. Averaging of single solution does not help increase accuracy, so this step is crucial to get an accurate track.
