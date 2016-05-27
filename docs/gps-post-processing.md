@@ -73,7 +73,7 @@ Looks really good now!
 
 ![image](img/post-processing/Post15.PNG)
 
-What could have happened if we did not use the exact position of the base, but just averaged single position? This is a close up of three turns, blue track has been processed without exact base position. You can see a shift of several meters.
+What could have happened if we did not use the exact position of the base, but just averaged single position? The picture depict a close up of three turns, where green track has been processed with exact base station position specified and blue track has been processed without it. Both tracks are precise, but blue track has a shift of several meters.
 
 ![image](img/post-processing/Post16.PNG)
 
