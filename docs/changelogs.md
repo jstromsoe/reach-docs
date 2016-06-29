@@ -1,5 +1,19 @@
 ### ReachView changelog
 
+#### v0.4.3
+
+* Update repository readme
+
+#### v0.4.2
+
+* Fix lat-lon mix up in the status header
+
+#### v0.4.1
+
+* Fixed a bug with two solutions set to file
+* Fixed a bug with conversion cancellation
+* JS console inside the app now shows full RTKLIB status
+
 #### v0.4.0
 
 * Added support for UBX time marks when converting logs to RINEX
