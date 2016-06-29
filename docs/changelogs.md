@@ -2,11 +2,11 @@
 
 #### v0.4.3
 
-* Update repository readme
+* Updated repository readme
 
 #### v0.4.2
 
-* Fix lat-lon mix up in the status header
+* Fixed lat-lon mix up in the status header
 
 #### v0.4.1
 
