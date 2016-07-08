@@ -1,5 +1,18 @@
 ### ReachView changelog
 
+#### v0.4.5
+
+* Added log delete confirmation popup
+* Added button to delete logs by day
+* Correction logs are now present in the logs tab
+
+#### v0.4.4
+
+* Added RTKLIB integrity check on startup, which fixes the bug with logs not downloading properly
+* Updated rtkrcv for better performance with dynamic filter on. 
+* Updated rtkrcv send to more complete NMEA GGA to the base
+* Improve startup time
+
 #### v0.4.3
 
 * Updated repository readme
