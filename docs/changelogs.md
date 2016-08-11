@@ -1,5 +1,9 @@
 ### ReachView changelog
 
+#### v0.4.6
+
+* Updated **prnaccel** and **arlockcnt** values in default config files for better RTK results
+
 #### v0.4.5
 
 * Added log delete confirmation popup
