@@ -2,7 +2,7 @@
 
 #### v0.4.7
 
-* Updated RTKLIB binaries to 2.4.3 b16 and added a couple of pathches by rtklibexplorer
+* Updated RTKLIB binaries to 2.4.3 b16 and added a couple of patches by rtklibexplorer
 
 #### v0.4.6
 
