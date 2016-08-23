@@ -5,6 +5,11 @@ Since ReachView version **0.3.0** Reach supports RTK-enhanced coordinates output
 Here is a demo video with our results:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oq9H19ikAdM" frameborder="0" allowfullscreen></iframe>
 
+
+#### ERB Protocol specification
+
+Protocol description is available [here](https://files.emlid.com/ERB.pdf).
+
 #### Pixhawk binaries
 
 Although **ERB** support has already been added to APM master, there was no release yet to include it. Therefore we provide stable binaries with ERB support for all the APM supported vehicles.
