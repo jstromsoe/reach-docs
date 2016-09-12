@@ -17,37 +17,43 @@ While Reach units are flashed before shipping, we plan to update the image in th
 
 [**Reach Image v1.2**](https://files.emlid.com/images/ReachImage_v1.2.zip)
 
-There are two ways to flash the image. Intel's GUI Phone Flash Tool Lite and a CLI script.
+There are two ways to flash the image. Intel's Edison Board Configuration Tool and a CLI script.
 
 ### Flashing process
 
 #### GUI guide
 
-###### Getting Intel Phone Flash Tool Lite
+##### Getting Intel Edison Board Configuration Tool
 
 You can get the tool [here](https://software.intel.com/en-us/iot/hardware/edison/downloads). It is available for Windows, Mac and Linux.
 
-###### Flashing Reach
+##### Flashing Reach
 
-Before flashing:
+- Plug Reach to this computer 
+- Unzip the image 
+- Run Intel Edison Board Configuration Tool. Hit **Next**
 
-0. If you are running Windows, install [Intel Edison drivers](http://downloadmirror.intel.com/24909/eng/IntelEdisonDriverSetup1.2.1.exe)
-1. Unzip the image
-2. Open the Phone Flash Tool Lite
-3. Choose correct path to the unzipped image(You will need to point it to a **.json** file inside)
-4. Choose correct USB drivers. RNDIS for Windows, CDC for Mac and Linux
+![Welcome](img/firmware-reflashing/welcome.png)
 
-![preflash](img/firmware-reflashing/preflash.png)
+- Read License Agreement, accept the terms of the License and hit **Next** twice
 
-After this:
+![License](img/firmware-reflashing/license.png)
 
-1. Unplug Reach if it is plugged to this computer
-2. Hit the blue **Start to flash** button
-3. Plug Reach in
-4. Monitor progress
-5. Proceed to "After flashing"
+- Install drivers (**Only for Windows**) 
 
-![flash](img/firmware-reflashing/flash.png)
+![setupopt](img/firmware-reflashing/setupopt.png)
+
+- After installation hit **Flash Firmware**
+
+![setupopt_drv](img/firmware-reflashing/setup_with_drivers.png)
+
+- Choose second item: **Use existing image, located at:**  
+- Choose correct path to the unzipped image (You will need to point it to a **.json** file for Windows and **.hddimg** for Linux)  
+- Hit **Next** twice
+
+![preflash](img/firmware-reflashing/choose_img.png)
+
+- Proceed to "After flashing"
 
 #### Terminal guide
 
