@@ -2,6 +2,8 @@
 
 This tutorial requires:
 
+**Post-processing logs with Emlid's version of RTKPOST requires using RINEX logs of version 3 and higher!**
+
 * RINEX log from the rover, in this case a copter flying a mission with a camera
 * RINEX log from the base station installed in a range of 10km near a flying area
 * (Optional) For absolute positioning: RINEX observations log from a reference station in a range of 100km
