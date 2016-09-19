@@ -1,5 +1,13 @@
 ### ReachView changelog
 
+#### v0.4.9
+
+* Updated rtkrcv binary to RTKLIB 2.4.3 beta 16
+
+#### v0.4.8
+
+* Fixed a bug with base not stopping correctly every time
+
 #### v0.4.7
 
 * Updated RTKLIB binaries to 2.4.3 b16 and added a couple of patches by rtklibexplorer
