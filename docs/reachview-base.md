@@ -26,7 +26,7 @@ You can read about the first two in the [correction link](reachview-link.md) sec
 
 ##### RTCM3 messages
 
-You can configure which RTCM3 messages to send. This may be helpful if your correction link cant handle the data load. Full message description can be found here [here](http://www.geopp.de/rtcm-3-x-message-types/).
+You can configure which RTCM3 messages to send. This may be helpful if your correction link cant handle the data load. Full message description can be found here [here](http://www.geopp.com/pdf/gppigs06_rtcm_f.pdf).
 
 ![rtcm3-messages.png](img/reachview-base/rtcm3-messages.png)
 
