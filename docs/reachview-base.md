@@ -28,6 +28,18 @@ You can read about the first two in the [correction link](reachview-link.md) sec
 
 You can configure which RTCM3 messages to send. This may be helpful if your correction link cant handle the data load. Full message description can be found here [here](http://www.geopp.com/pdf/gppigs06_rtcm_f.pdf).
 
+The minimal messages, required for RTK are **1002** and **1006**. They contain GPS L1 observations(extended data) and base antenna coordinates(extended data). If you wish to add GLONASS L1 observations, use **1010** as well.
+
+Here is an estimation of bps with base update frequency set to 1 Hz:
+
+| RTCM3 messages   | Data rate, bps |
+|------------------|----------------|
+| 1002, 1006       | 1150           |
+| 1002, 1006, 1010 | 1880           |
+| All available    | 2664           |
+
+For higher frequencies, multiply the data rate by the number of Hertz.
+
 ![rtcm3-messages.png](img/reachview-base/rtcm3-messages.png)
 
 ##### Base coordinates
