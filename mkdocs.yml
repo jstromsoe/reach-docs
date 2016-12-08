@@ -17,7 +17,7 @@ pages:
 - Monitoring status: reachview-status.md
 - Base configuration: reachview-base.md
 - Hardware integration: hardware-integration.md
-- APM integration: apm-integration.md
+- ArduPilot integration: ardupilot-integration.md
 - GPS post-processing: gps-post-processing.md
 - Camera integration: camera-integration.md
 - PylonGPS: pylon-gps.md

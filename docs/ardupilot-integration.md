@@ -1,4 +1,4 @@
-### APM integration
+### ArduPilot integration
 
 Since ReachView version **0.3.0** Reach supports RTK-enhanced coordinates output to Navio and Pixhawk autopilots. To make this possible, we implemented a custom gps protocol we call **ERB**(Emlid Reach Binary protocol).
 
@@ -12,7 +12,7 @@ Protocol description is available [here](https://files.emlid.com/ERB.pdf).
 
 #### Pixhawk binaries
 
-Although **ERB** support has already been added to APM master, there was no release yet to include it. Therefore we provide stable binaries with ERB support for all the APM supported vehicles.
+Although **ERB** support has already been added to ArduPilot master, there was no release yet to include it. Therefore we provide stable binaries with ERB support for all the ArduPilot supported vehicles.
 
 * [Pixhawk firmware compatible with ERB](https://files.emlid.com/apm/px4-reach.zip)
 
@@ -29,7 +29,7 @@ The following guide will show how to configure both Pixhawk and Reach to work in
 
 #### Connecting Reach to Pixhawk
 
-![pixhawk-reach-radio.png](img/apm-integration/pixhawk-reach-radio.png)
+![pixhawk-reach-radio.png](img/ardupilot-integration/pixhawk-reach-radio.png)
 
 To provide RTK solution to Pixhawk, Reach needs to be connected via a serial port. You can do that by plugging the serial cable into Reach's upper DF13 port and Pixhawk's **"Serial 4/5"** connector.
 
@@ -49,7 +49,7 @@ Start with **"reach_kinematic_default.conf"** configuration file. For both **Inp
 
 To load these settings, hit the **Save** button at the top, then agree to load the configuration onto Reach.
 
-![reach-settings.png](img/apm-integration/reach-settings.png)
+![reach-settings.png](img/ardupilot-integration/reach-settings.png)
 
 #### Setting up a correction link
 
@@ -69,7 +69,7 @@ You need to clear the field **ECC** and choose **Raw Data** in the Mavlink selec
 
 After this, click **Save settings**. If your radio's firmware is outdated, update with **Update Firmware(Local)**.
 
-![mp-radio-setup.png](img/apm-integration/mp-radio-setup.png)
+![mp-radio-setup.png](img/ardupilot-integration/mp-radio-setup.png)
 
 ##### Configuring Pixhawk to accept Reach solution
 
@@ -77,44 +77,44 @@ After this, click **Save settings**. If your radio's firmware is outdated, updat
 
 Pixhawk configuration will require setting some parameters via Mission planner. After connecting, go to **CONFIG/TUNING** menu, then click **Full parameters list** on the left. To find the desired parameter more quickly, use a search box on the right(highlighted in red).
 
-![mp-full-parameter-list.png](img/apm-integration/mp-full-parameter-list.png)
+![mp-full-parameter-list.png](img/ardupilot-integration/mp-full-parameter-list.png)
 
 Start with settings **GPS-TYPE2** parameter to **"1"** - AUTO. This will enable the second GPS input.
 
-![mp-gps-type2-parameter.png](img/apm-integration/mp-gps-type2-parameter.png)
+![mp-gps-type2-parameter.png](img/ardupilot-integration/mp-gps-type2-parameter.png)
 
 Next, set **SERIAL4_BAUD** parameter to the same baud rate, as chosen in ReachView solution output. Note the options corresponding to the different baud rates.
 
-![mp-serial4-baud-parameter.png](img/apm-integration/mp-serial4-baud-parameter.png)
+![mp-serial4-baud-parameter.png](img/ardupilot-integration/mp-serial4-baud-parameter.png)
 
 Set **GPS_AUTO_SWITCH** to **"1"** - Enabled. Pixhawk will automatically switch between the two GPS receivers, picking the one with better solution.
 
-![mp-gps-auto-switch-parameter.png](img/apm-integration/mp-gps-auto-switch-parameter.png)
+![mp-gps-auto-switch-parameter.png](img/ardupilot-integration/mp-gps-auto-switch-parameter.png)
 
 Finally, set **GPS_INJECT_TO** parameter to **"1"**. **"1"** here stands for the second GPS input. If you configured Reach as the first input, set this parameter to **"0"**.
 
-![mp-gps-inject-to-parameter.png](img/apm-integration/mp-gps-inject-to-parameter.png)
+![mp-gps-inject-to-parameter.png](img/ardupilot-integration/mp-gps-inject-to-parameter.png)
 
 ##### Configuring Mission planner to inject RTK corrections into telemetry
 
 To enable and configure GPS inject options in Mission planner press **"ctrl+F"** button combination. This will open a window with advanced GCS settings. Click **Inject GPS** button on the right.
 
-![mp-gps-inject-settings.png](img/apm-integration/mp-gps-inject-settings.png)
+![mp-gps-inject-settings.png](img/ardupilot-integration/mp-gps-inject-settings.png)
 
 In the new window, choose parameters for base connection. Reach in base mode supports TCP and serial modes. For the sake of this example, **let's assume base corrections are coming from another Reach in base TCP server mode**. This is a setup we usually use in our test flights.
 
 In order to connect, choose TCP client mode in Mission Planner.
 
-![mp-gps-inject-connection-type.png](img/apm-integration/mp-gps-inject-connection-type.png)
+![mp-gps-inject-connection-type.png](img/ardupilot-integration/mp-gps-inject-connection-type.png)
 
 Enter Base Reach's IP address.
 
-![mp-gps-inject-ip.png](img/apm-integration/mp-gps-inject-ip.png)
+![mp-gps-inject-ip.png](img/ardupilot-integration/mp-gps-inject-ip.png)
 
 And port the server port number.
 
-![mp-gps-inject-port.png](img/apm-integration/mp-gps-inject-port.png)
+![mp-gps-inject-port.png](img/ardupilot-integration/mp-gps-inject-port.png)
 
 Finally, check the corrections are coming in.
 
-![mp-gps-inject-connected.png](img/apm-integration/mp-gps-inject-connected.png)
+![mp-gps-inject-connected.png](img/ardupilot-integration/mp-gps-inject-connected.png)
