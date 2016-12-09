@@ -10,12 +10,6 @@ Here is a demo video with our results:
 
 Protocol description is available [here](https://files.emlid.com/ERB.pdf).
 
-#### Pixhawk binaries
-
-Although **ERB** support has already been added to ArduPilot master, there was no release yet to include it. Therefore we provide stable binaries with ERB support for all the ArduPilot supported vehicles.
-
-* [Pixhawk firmware compatible with ERB](https://files.emlid.com/apm/px4-reach.zip)
-
 #### Recommended setup
 
 The setup we recommend goes as follows:
