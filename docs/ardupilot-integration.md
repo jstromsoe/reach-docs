@@ -14,12 +14,13 @@ Protocol description is available [here](https://files.emlid.com/ERB.pdf).
 
 The setup we recommend goes as follows:
 
+* Navio or Pixhawk with the ArduPilot firmware (not less version 3.4.0 for ArduCopter, 3.6.0 for ArduPlane and 3.0.1 for ArduRover). It's preferable to use the last stable version
 * Base stations is a Reach unit in Wi-Fi AP mode, configured as a TCP server
 * GCS is a laptop with Mission Planner(version 1.3.35 and higher), connected to the base Reach Wi-Fi hosted network
 * Telemetry connection via a serial radio
-* Rover Reach unit is mounted on a drone and connected to Pixhawk via the 6P-to-6P wire. This connection type will solve three problems at once: power Reach, allow Pixhawk to pass base corrections and allow Reach to pass RTK solution back.
+* Rover Reach unit is mounted on a drone and connected to Navio or Pixhawk via the 6P-to-6P wire. This connection type will solve three problems at once: power Reach, allow ArduPilot board to pass base corrections and allow Reach to pass RTK solution back.
 
-The following guide will show how to configure both Pixhawk and Reach to work in this setup. If you wish alter to this workflow, it should be fairly easy to do so, as every part of the system is independent of others.
+The following guide will show how to configure both Navio or Pixhawk and Reach to work in this setup. If you wish alter to this workflow, it should be fairly easy to do so, as every part of the system is independent of others.
 
 #### Connecting Reach to Pixhawk
 
@@ -27,7 +28,13 @@ The following guide will show how to configure both Pixhawk and Reach to work in
 
 To provide RTK solution to Pixhawk, Reach needs to be connected via a serial port. You can do that by plugging the serial cable into Reach's upper DF13 port and Pixhawk's **"Serial 4/5"** connector.
 
-#### Configuring Reach to work with Pixhawk
+#### Connecting Reach to Navio
+
+![navio2-reach.png](img/ardupilot-integration/navio2-reach.png)
+
+Connect Reach's upper DF13 port with Navio's **UART** port.
+
+#### Configuring Reach to work with ArduPilot
 
 > The serial connection is used to accept base corrections and send solution at the same time.
 
@@ -65,11 +72,17 @@ After this, click **Save settings**. If your radio's firmware is outdated, updat
 
 ![mp-radio-setup.png](img/ardupilot-integration/mp-radio-setup.png)
 
-##### Configuring Pixhawk to accept Reach solution
+##### Configuring ArduPilot to accept Reach solution
 
 > It is recommended to use Reach as a second GPS unit only.
 
-Pixhawk configuration will require setting some parameters via Mission planner. After connecting, go to **CONFIG/TUNING** menu, then click **Full parameters list** on the left. To find the desired parameter more quickly, use a search box on the right(highlighted in red).
+For launch ArduPilot on Navio add to your starting command the following argument:
+```bash
+-E /dev/ttyAMA0
+```
+This will enable to use Reach as external GPS.
+
+ArduPilot configuration will require setting some parameters via Mission planner. After connecting, go to **CONFIG/TUNING** menu, then click **Full parameters list** on the left. To find the desired parameter more quickly, use a search box on the right(highlighted in red).
 
 ![mp-full-parameter-list.png](img/ardupilot-integration/mp-full-parameter-list.png)
 
@@ -81,7 +94,7 @@ Next, set **SERIAL4_BAUD** parameter to the same baud rate, as chosen in ReachVi
 
 ![mp-serial4-baud-parameter.png](img/ardupilot-integration/mp-serial4-baud-parameter.png)
 
-Set **GPS_AUTO_SWITCH** to **"1"** - Enabled. Pixhawk will automatically switch between the two GPS receivers, picking the one with better solution.
+Set **GPS_AUTO_SWITCH** to **"1"** - Enabled. Autopilot will automatically switch between the two GPS receivers, picking the one with better solution.
 
 ![mp-gps-auto-switch-parameter.png](img/ardupilot-integration/mp-gps-auto-switch-parameter.png)
 
