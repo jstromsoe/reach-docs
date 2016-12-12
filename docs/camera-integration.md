@@ -6,7 +6,7 @@ The time marks are saved to the RINEX observation file as **external events**.
 
 #### Post-processing software
 
-To get the coordinates for these events you will need to perform post-processing on RINEX logs. By default, RTKLIB does not support external events, so we provide a patched version of **RTKPOST**. Our version **requires SBAS turned off during processing**.
+To get the coordinates for these events you will need to perform post-processing on RINEX logs. By default, RTKLIB does not support external events, so we provide patched versions of **RTKCONV** and **RTKPOST**.
 
 * [RTKCONV](https://files.emlid.com/RTKLIB/rtkconv_emlid_b26.exe)
 * [RTKPOST](https://files.emlid.com/RTKLIB/rtkpost_emlid_b26.exe)
