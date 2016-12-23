@@ -7,22 +7,22 @@ This tutorial requires:
 * (Optional) For absolute positioning: RINEX observations log from a reference station in a range of 100km
 * (Optional) For processing improvement: precise ephemeris and clock files from the IGS
 
-Rover track is calculated relatively to the base station so in order to get rover track with correct absolute coordinates the exact position of the base station should be known. You either need to place base station on a point with known coordinate or determine it by post-processing base against a reference station. It is better if the station is within 100km range, but longer range might work as well. 
+Rover track is calculated relatively to the base station so in order to get rover track with correct absolute coordinates the exact position of the base station should be known. You either need to place base station on a point with known coordinate or determine it by post-processing base against a reference station in static mode. It is better if the station is within 100km range, but longer range might work as well.
 
 
 ### Converting raw logs to RINEX
 
-Start [RTKLIB RTKCONV](https://files.emlid.com/RTKLIB/rtkconv_emlid_b26.exe) after downloading raw files from Reach on your PC.
+Start [RTKLIB RTKCONV](https://files.emlid.com/RTKLIB/rtkconv_emlid_b26.exe) after downloading raw files from Reach to your PC.
 
 * Add your rover raw log in the first field and choose output directory.
-* Choose format of your log in pop-down menu. Usually it's u-blox.
+* Choose format of your log in pop-down menu. Set format to u-blox if logs downloaded from each device. Otherwise, choose RTCM3 if base and rover logs were recieved from rover.
 
 ![image](img/post-processing/rtkconv_format.png)
 
 * Push "Options" button.
 * Choose "RINEX Version" 3.03.
 * Turn on "Satellites Systems" you need.
-* Press "OK" and "Covert" after.
+* Press "OK" and "Convert" after.
 
 ![image](img/post-processing/rtkconv_options.png)
 
@@ -33,7 +33,7 @@ After that you'll see something similar in your output folder.
 
 ### Calculating base position
 
-Start [RTKLIB RTKPOST](https://files.emlid.com/RTKLIB/rtkpost_emlid_b26.exe) software and enter the fields as shown here. If running for the first time you will need to set mode to Static in the options to unlock the fields for base staiton data. You can skip the start time, it is not compulsory.
+Start [RTKLIB RTKPOST](https://files.emlid.com/RTKLIB/rtkpost_emlid_b26.exe) software and enter the fields as shown here. If running for the first time you will need to set mode to Kinematic or Static in the options to unlock the fields for base staiton data. You can skip the start time, it is not compulsory.
 
 * Choose rover .obs file for the Rover field (RINEX file from your rover).
 * Select base station .obs file for the Base Station field (RINEX file from your base).
@@ -49,6 +49,7 @@ Now proceed to the options by pushing "Options" button.
 ![image](img/post-processing/rtkpost_setting1_mode.png)
 
 * Choose "Elevation Mask" value. Usually it's 15-20.
+* Push "SNR Mask" button and set the value you need. This will help you to avoid satellites with low signal strength.
 
 ![image](img/post-processing/rtkpost_setting1_mask.png)
 
@@ -67,12 +68,12 @@ Now proceed to the options by pushing "Options" button.
 ![image](img/post-processing/rtkpost_setting2_ar.png)
 
 * Switch to "Positions" tab.
-* Select "Base Station". Default setting is "RINEX Header Position".
+* Select "Base Station". Choose "Average of Single Position" for any log to average single point solution or "RINEX Header Position" to use approximate position in RINEX .obs header.
 
 ![image](img/post-processing/rtkpost_positions_base.png)
 
 * Press "OK" button and "Execute" in the main window.
-* You'll see green process bar. Wait untill "done" label.
+* You'll see green process bar. Wait untill "done" label. It could take quiet a lot of time if your logs are big. In that case window could not answer. Just chill and relax.
 
 ![image](img/post-processing/rtkpost_execute.png)
 
