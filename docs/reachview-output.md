@@ -40,11 +40,11 @@ Just as with raw data logging, solution can be directed to the same destinations
 * **Serial**. USB or UART serial devices, like 3DR radio
 * **Bluetooth**. This is a special option as it allows **Reach solution to be used on Android devices as a location source**. This is known as "mock location".
 
-##### Passing RTK solution to an APM autopilot
+##### Passing RTK solution to an ArduPilot
 
 > Since ReachView version **0.3.0** Reach adds support to output RTK solution to Navio and Pixhawk autopilots
 
-To do this, simply select **erb** solution output **format** in the ReachView configuration tab. Read more on APM integration here.
+To do this, simply select **erb** solution output **format** in the ReachView configuration tab. Read more on ArduPilot integration here.
 
 ##### Bluetooth output and Android mock location
 
