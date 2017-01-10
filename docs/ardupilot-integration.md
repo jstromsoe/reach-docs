@@ -5,10 +5,17 @@ Since ReachView version **0.3.0** Reach supports RTK-enhanced coordinates output
 Here is a demo video with our results:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oq9H19ikAdM" frameborder="0" allowfullscreen></iframe>
 
-
 #### ERB Protocol specification
 
 Protocol description is available [here](https://files.emlid.com/ERB.pdf).
+
+#### Requirements
+
+ERB support is included to ArduPilot starting with the following versions:
+
+* ArduCopter 3.4
+* ArduPlane  3.5.0
+* APMrover   3.1
 
 #### Recommended setup
 
