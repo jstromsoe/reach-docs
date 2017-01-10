@@ -44,13 +44,23 @@ This is not officially supported, but there is a [workaround](https://communitie
 
 ##### SSH connection
 
+###### Login and password:
+
+* **login**:    `reach`
+* **password**: `reach`
+
+Note that for the latest beta images this has changed and the new login credentials are:
+
+* **login**:    `root`
+* **password**: `emlidreach`
+
 ###### Linux/Mac OS X
 
-Open up a terminal and type `ssh reach@192.168.1.3`, where **192.168.1.3** is the IP address of your Reach unit. If there is only one Reach unit on the network, it should be accessible by `ssh reach@reach.local`. If you are on the Reach-hosted network, it's IP address will always be **192.168.42.1**. The **password** is also **reach**.
+Open up a terminal and type `ssh reach@192.168.1.3`, where **192.168.1.3** is the IP address of your Reach unit. If there is only one Reach unit on the network, it should be accessible by `ssh reach@reach.local`. If you are on the Reach-hosted network, it's IP address will always be **192.168.42.1**. You will be prompted for password.
 
 ###### Windows
 
-To connect, you will need to use **putty** or another third-party ssh implementation. After you have determined the IP address, type it in along with username **reach**. The **password** is also **reach**.
+To connect, you will need to use **putty** or another third-party ssh implementation. After you have determined the IP address, type it in along with the username.
 
 ### Home directory contents
 
@@ -89,7 +99,7 @@ The back-end is written in Python. It uses [**pexpect**](http://pexpect.readthed
 
 #### ReachView front-end
 
-The front-end is the primary user interface for both ReachView and Reach. The intended use includes changing RTKLIB settings on Reach device, monitoring satellite levels for better antenna placement, monitoring solution status. It also allows to download logs, in case they were stored on the device.  
+The front-end is the primary user interface for both ReachView and Reach. The intended use includes changing RTKLIB settings on Reach device, monitoring satellite levels for better antenna placement, monitoring solution status. It also allows to download logs, in case they were stored on the device.
 
 The front-end is built using [**jQuery**](https://jquery.com), [**Socket.IO**](http://socket.io) and [**jQuery Mobile**](https://jquerymobile.com) as a UI element framework.
 
