@@ -12,7 +12,7 @@ Rover track is calculated relatively to the base station so in order to get rove
 
 ### Converting raw logs to RINEX
 
-Start [RTKLIB RTKCONV](https://files.emlid.com/RTKLIB/rtkconv_emlid_b26.exe) after downloading raw files from Reach to your PC.
+Start [RTKLIB RTKCONV](https://files.emlid.com/RTKLIB/rtkconv_emlid_b27.exe) after downloading raw files from Reach to your PC.
 
 * Add your rover raw log in the first field and choose output directory.
 * Choose format of your log in pop-down menu. Set format to u-blox if logs downloaded from each device. Otherwise, choose RTCM3 if base and rover logs were recieved from rover.
@@ -33,7 +33,7 @@ After that you'll see something similar in your output folder.
 
 ### Calculating base position
 
-Start [RTKLIB RTKPOST](https://files.emlid.com/RTKLIB/rtkpost_emlid_b26.exe) software and enter the fields as shown here. If running for the first time you will need to set mode to Kinematic or Static in the options to unlock the fields for base staiton data. You can skip the start time, it is not compulsory.
+Start [RTKLIB RTKPOST](https://files.emlid.com/RTKLIB/rtkpost_emlid_b27.exe) software and enter the fields as shown here. If running for the first time you will need to set mode to Kinematic or Static in the options to unlock the fields for base staiton data. You can skip the start time, it is not compulsory.
 
 * Choose rover .obs file for the Rover field (RINEX file from your rover).
 * Select base station .obs file for the Base Station field (RINEX file from your base).
