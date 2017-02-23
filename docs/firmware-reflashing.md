@@ -17,6 +17,8 @@ While Reach units are flashed before shipping, we plan to update the image in th
 
 [**Reach Image v1.2**](https://files.emlid.com/images/ReachImage_v1.2.zip)
 
+[**Reach Image v2.3(beta)**](https://files.emlid.com/images/ReachImage_v2.3.zip)
+
 There are two ways to flash the image. Intel's Edison Board Configuration Tool and a CLI script.
 
 ### Flashing process
