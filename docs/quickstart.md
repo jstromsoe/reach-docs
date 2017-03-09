@@ -2,7 +2,7 @@
 
 In this quick tutorial we will show you how to two set up two Reach devices as a base and a rover with correction link over Wi-Fi.
 
-> **If you encounter any issues performing these steps, please take a look at our [troubleshooting guide](troubleshooting.md). If your problem is not covered, we will be happy to help at our [community forums](http://community.emlid.com/).**
+> If you encounter any issues performing these steps, we will be happy to help at our [**community forums**](http://community.emlid.com/).
 
 This tutorial only covers on use case. To get more information, follow these links:
 
@@ -13,125 +13,184 @@ This tutorial only covers on use case. To get more information, follow these lin
 
 ### Powering up
 
-Take Micro-USB<-->USB cable that is coming with the package. Plug Micro-USB end of the cable into Micro-USB port on Reach and plug another end into 5V power source such as USB power bank, USB wall adapter or USB port of a computer.
+* Take **Micro-USB <--> USB cable** that is coming with the package.
 
-More on power supply [here](power-supply.md).
+* Plug **Micro-USB end** of the cable into **Micro-USB port** on Reach and plug another end into 5V power source such as USB power bank, USB wall adapter or USB port of a computer.
 
-### Connecting and placing antenna
+> <font color="red"> **IMPORTANT** </font>
 
-Plug antenna cable into MCX socket on Reach. Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building. There should be no obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
+> **Do not** plug two power supplies at the same time as it may damage the device.
 
-> Do not test the device indoors or near buildings, do not cover the skyview for the antennas with laptops, cars or yourself. RTK requires good satellite visibility and reception.
+More on power supply you can read [here](power-supply.md).
+
+### Connecting and placing GPS antenna
+
+* Plug antenna cable into MCX socket on Reach. 
+
+* Place antenna on a ground plane. It could be a cut piece of metal > 100mm in diameter, roof of a car or metal roof of a building. 
+
+> **IMPORTANT**
+
+>There **should be no** obstacles near the antenna that could block the sky view higher than 30 degrees above horizon.
+
+> **Do not** test the device indoors or near buildings, do not cover the skyview for the antennas with laptops, cars or yourself. RTK requires good satellite visibility and reception.
 
 A guide how to properly place the antennas is available in [Antenna Placement](antenna-placement.md) section.
 
 ### Connecting to Reach
 
-When Reach is powered for the first time it will create a Wi-Fi hotspot. Open a list of Wi-Fi networks on your smartphone, tablet or laptop and connect to a network named "reach:part_of_mac_address". For example, **reach:66:ac**. The network password is "**emlidreach**".
+When Reach is powered for the first time it will create a Wi-Fi hotspot.
+
+* Open a list of Wi-Fi networks on your smartphone, tablet or laptop.
+
+* Connect to a network named **reach:xx:xx** (ex. reach:66:ac).
+
+* Type network password: **emlidreach**.
 
 > If this password is not accepted, probably your Reach has been flashed with a bugged firmware, please [reflash](firmware-reflashing.md) with the latest image.
 
 ### Setting up Wi-Fi
 
-After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop and type either **http://reach.local:5000** or **http://192.168.42.1:5000** in the address bar. Enter your Wi-Fi network (e.g. a hotspot on your smartphone) "mywifinetwork" and enter a password. Hit submit and wait for about a minute. Reach will disable its own hotspot and try to connect to your Wi-Fi network.
+After connecting to the network hosted by reach, open a web browser on your smartphone, tablet or laptop.    
 
-![reach_wifi_setup.png](img/quickstart/reach_wifi_setup.png)
+* Type either **http://reach.local** or **http://192.168.42.1** in the address bar and you will see ReachView Updater.
 
-Note that after hitting "Submit" a **progress bar** will appear. You **should not** wait for the progress bar to reach it's end. **That sometimes ends with an error message which is irrelevant and misleading**. Moreover, sometimes, due to ".local" name resolving problems, the **bar does not really start to go at all**. Don't wait for more than 30 seconds, as it's usually more than enough for the device to reconnect to a new network.
+![reach_view_updater_main.png](img/quickstart/reach_view_updater_main.png) 
 
-![wifi_error.png](img/quickstart/wifi_error.png)
+* Press plus button and enter your Wi-Fi network name, security type and password. Press Save button
 
-***Perform all previous steps for both Reach devices.***
+![reach_view_updater_wifi.png](img/quickstart/reach_view_updater_wifi.png) 
+
+* Press on your added network and click Connect. 
+
+![reach_view_updater_wifi_connect.png](img/quickstart/reach_view_updater_wifi_connect.png)    
+
+* After that Reach device will reboot and connect to your Wi-Fi network.
+
+> **IMPORTANT**
+
+> If your device do not connect to Wi-Fi network, check your name and password once again.    
+> You can find Reach on **http://reach.local** or **http://192.168.42.1** as usual in hotspot mode.
 
 ### Accessing Reach device in a network
 
-After connecting Reach devices to an existing Wi-Fi network, you will need to identify their IP's. For this you can use a smartphone app "Fing", "nmap" on Linux/OS X and Zenmap on Windows. Reach will show up as "Murata manufacturing" device in these apps.
+After connecting Reach device to an existing Wi-Fi network, you will need to identify it IP.    
 
-If your device supports Bonjour discovery, you can access Reach with "reach.local" address. However, with two devices on the network only one will respond to "reach.local".
+For this you can use:    
 
-Read more on resolving IP addresses in the [ReachView section](reachview-basics.md).
+* "**Fing**" app for [iOS](https://goo.gl/Ho0qB) or [Android](https://goo.gl/7Wuwu).
+
+* ["**Nmap**"](https://nmap.org/) on Linux/OS X.
+
+* ["**Zenmap**"](https://nmap.org/zenmap/) on Windows. 
 
 ![fing.png](img/quickstart/fing.png)
 
+* Reach will show up as "**Murata Manufacturing**" device in these apps.
+
+* Put Reach IP in address bar and go.
+
+> If your device supports Bonjour discovery, you can access Reach with **http://reach.local**.
+> However, **with two** devices on the network **only one** will respond to such address.
+
+Read more on resolving IP addresses in the [ReachView section](reachview-basics.md).    
+
+* After that you will see ReachView Updater again which will test your device and check for updates.
+
+> In ReachView we have automatic notification about updates.    
+> You can also check :5000 port fo them in the future.
+
+![reach_view_updater_finish.png](img/quickstart/reach_view_updater_finish.png)
+
+* Press **Reboot and go to the app!** button if everything is OK.
+
+* Refresh page when you will see green led on your device, which means that it is ready to go.
+
+* Here's our ReachView app is loading!
+
+![reach_view_loading.png](img/quickstart/reach_view_loading.png)
+
+
 ### Working with ReachView app
+
 
 #### Interface walkthrough
 
-Open a web browser on your smartphone, tablet or laptop and type IP address of Reach in the address bar. ReachView consists of three main tabs: **Status**, **Config**, **Logs**. **Status** will show current satellite levels, solution status and coordinates. **Config** tab is used to set RTK parameters like positioning mode, set correction input interfaces and more. **Logs** tab keeps links to raw data logs, stored on the device and keeps the self-update button. By default, Reach starts as a rover and is stopped.
+![reach_view_status_menu.png](img/quickstart/reach_view_status_menu.png)
 
-#### Updating ReachView
+ReachView menu consists of 9 tabs, but we only need three of them to start work:    
 
-To do this, make sure Reach is connected to a Wi-Fi network with Internet access. Go to the Logs page and press the **Update** button. ReachView will go inactive for about a minute. To reconnect, close the current tab and try to open ReachView in a new one. It is preferred to use Reach's IP address instead of **reach.local** to connect after an update.
+* **Status** tab which shows current satellite levels, RTK parameters, coordinates and map.
 
-***Perform the update for both Reach devices.***
+* **Base mode** tab is used to set base mode, coordinates and RTCM3 messages.
 
-<font color="red">From this point, it is considered that you performed the update.</font>
+* **Correction input** tab is used to set base correction for the rover.
 
 #### Setting up base station
 
-Connect to Reach you want to use as a base. Navigate to Config tab and choose **Base** in the upper selector. Wait for the app to fetch current base settings. The settings include: base coordinates, input stream, output stream and RTCM3 messages to be used.
+* Connect to Reach you want to use as a base.
 
-![base_mode.png](img/quickstart/base_mode.png)
+* Navigate to **Base mode** tab and turn on Correction output box toggle.
 
-By default, base output stream will be available on a TCP port 9000.
+* Wait until base will average it's position in Base ccordinates box.
 
-![base_output_stream.png](img/quickstart/base_output_stream.png)
+![reach_view_base_mode_menu.png](img/quickstart/reach_view_base_mode_menu.png)
 
-Hit the **Start** button.
+By default, base output stream will be available on a **TCP port 9000**.
+
 
 #### Setting up rover
 
-Connect to the second Reach. Navigate to **Config** tab and choose **Rover** mode in the upper selector. Wait for the app to fetch current rover settings. Choose **reach_kinematic_default.conf** from the configuration file list.
+* Connect to the second Reach. 
 
-![rover_kinematic.png](img/quickstart/rover_kinematic.png)
+* Navigate to **Correction input** tab. 
 
-Now, you need to change base station connection settings. Make sure that "Input source for base corrections" is set to **tcpcli** (TCP client) and enter base Reach's IP address to the address window. Default port is 9000.
+![reach_view_correction_input_tab.png](img/quickstart/reach_view_correction_input_tab.png)
 
-![rover_base_stream.png](img/quickstart/rover_base_stream.png)
+* Choose TCP correction mode.
 
-Hit the **Save** button. Click "Yes" to load current settings. The rover mode will start.
+* Choose **Client** in **Role** field.
 
+* Add base IP in **Address** field.
 
-#### Keeping the settings
+* Add base correction port in **Port** field. Default one is **9000**.
 
-After configuration, Reach will remember it's settings and start in this state on boot. For example, device configured as Rover with "reach_single_default.conf" configuration file, started, will start Rover with the same config after a power cycle. Base mode will also keep it's settings and started/stopped state.
+* Choose correction input **Format**. Default one is **RTCM3**. 
 
-If, for some reason, Reach is rebooted during configuration process, the settings file might get corrupted. Then, by default Reach will start as a stopped Rover with "reach_single_default.conf" settings.
+![reach_view_correction_input_tcp.png](img/quickstart/reach_view_correction_input_tcp.png)
+
+* Save settings by pushing **Save** button.
+
 
 #### Viewing results
 
-##### ReachView status
+* Go to **Status** tab of the app on the rover device.
 
-Go to **Status** tab of the app on the rover device. You can see a bar chart with satellite levels, current coordinates in llh format, positioning mode and solution status. In this quick tutorial, positioning mode is set to "Kinematic" which is the main RTK mode.
+![reach_view_status_menu_correction.png](img/quickstart/reach_view_status_menu_correction.png)
 
-If everything has been set up correctly, you will see changes in the solution status box. You will see the statuses in the following order:
+You can see a bar chart with satellite levels, RTK parameters, positioning mode and solution status, current coordinates of rover and base in LLH format, velocity and map. In this quick tutorial, positioning mode is set to "Kinematic" which is the main RTK mode.
 
-* **"-"**. This means there is no information for the software to process. Either not enough time has passed or the antenna is not placed correctly.
-* **single**. This is usually the state that follows **"-"** in RTK mode. **Single** means that rover has found a solution relying on it's own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result.
-* **float**. The base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved.
-* **fixed**. Positioning is relative to the base and the integer ambiguity is properly resolved. This is as good as it gets, **fix** solution status indicates high level of positioning precision.
+* If everything has been set up correctly, **Solution status** will be **Float** and **you should see grey bars near satellite levels bars**. 
 
-If you see **float** or **fixed** solution status, RTK is set up correctly.
+> **Float** means that base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved.    
 
-![fix_status.png](img/quickstart/fix_status.png)
+> If you see **"-"** or **Single** in **Solution status** box on this step, that means that some settings are incorrect.    
+> **"-"** means there is no information for the software to process. Either not enough time has passed or the antenna is not placed correctly.    
+> **Single** means that rover has found a solution relying on it's own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result.
 
-Remember that satellite levels and therefore antenna placement severely affect RTK performance. You need at least 5 satellites with SNR levels over 45(marked green on the chart) to get RTK improved solution.
+* Wait until **Solution status** will be **Fix**. It should happen when AR validation ratio in RTK parameters box will be more than 3.    
 
-##### RTKPLOT
+> **Fix** means that positioning is relative to the base and the integer ambiguity is properly resolved.    
 
-You can view your solution in real time with RTKLIB's RTKPLOT(requires a Windows PC).
+> There's no default time for getting **Fix** because it depends on various factors.    
+> Remember that satellite levels and therefore antenna placement severely affect RTK performance.       
+> You need at least 5 satellites with SNR levels over 45 (marked green on the chart) to get RTK improved solution.
 
-First, we need to configure solution output. Go to rover's **Config** tab, and make solution output a TCP server, just like with the base output stream. Make sure output format is **llh**.
+![reach_view_status_menu_fix.png](img/quickstart/reach_view_status_menu_fix.png)
 
-![solution_output.png](img/quickstart/solution_output.png)
+* Now you can see green points on the map below.
 
-Now, open RTKPLOT and change connection settings to be a TCP client(File -> Connection settings). Enter rover's IP address and the port you entered to solution output settings.
-
-![rtkplot_connection.png](img/quickstart/rtkplot_connection.png)
-
-Connect using File -> Connect
-
-![rtkplot_fix.png](img/quickstart/rtkplot_fix.png)
+* You're ready to go!
 
 ### More reading
 
