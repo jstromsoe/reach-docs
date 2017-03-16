@@ -126,7 +126,7 @@ Base is mode is represented by **str2str** binary inside `/home/reach/RTKLIB/app
 
 **Str2str** does not use configuration files and is configured by command line options. Important options include:
 
-* **-in** specifies the output stream
+* **-in** specifies the input stream
 * **-out** specifies the output stream
 * **-p** specifies base coordinates(this is crucial to achieve good results) in llh format
 * **-c** specifies receiver command file. Used to enable and disable certain receiver messages and their frequencies. You can use of the files provided in `/home/reach/ReachView/rtklib_configs`.
