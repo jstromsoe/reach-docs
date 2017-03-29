@@ -33,7 +33,7 @@ Connection diagram for 3DR Radio v2:
 
 3DR Radio can also be connected over USB.
 
-Please note that a bug in the **Reach image before v1.2** prevents the Rover module from booting while it`s receiving UART correction signals from the base module. Current fix is powering up base module after the rover module has booted (LED are blinking red/blue/withe).
+Please note that a bug in the **Reach image before v1.2** prevents the Rover module from booting while it`s receiving UART correction signals from the base module. Current fix is powering up base module after the rover module has booted (LED are blinking red/blue/white).
 
 #### RFD900 Radio
 
@@ -52,4 +52,4 @@ Connection diagram for RFD900 radio:
 
 To connect USB radio to Reach use USB-OTG cable provided with the package.
 Plug radio into USB-F port and plug Micro-USB end of the cable in Reach.
-**When using USB port in OTG mode Reach has to be [powered](reach-power-supply.md) over one of the DF13 ports**.
+**When using USB port in OTG mode Reach has to be [powered](power-supply.md) over one of the DF13 ports**.
