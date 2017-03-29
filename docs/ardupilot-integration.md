@@ -60,7 +60,7 @@ To load these settings, hit the **Save** button at the top, then agree to load t
 
 ### Setting up a correction link
 
-Reach supports a number of ways to accept [base corrections](reachview-correction-input/#base-correction), including the popular in UAV area serial radios. However, having a separate radio link for base corrections only is highly ineffective.
+Reach supports a number of ways to accept [base corrections](common/reachview/correction-input/#base-correction), including the popular in UAV area serial radios. However, having a separate radio link for base corrections only is highly ineffective.
 
 To solve this, you can use the telemetry radio as a carrier for RTK corrections. GCS can pass these corrections to the autopilot with a feature called **GPS inject**. This funcionality is available in **Mission planner** only.
 

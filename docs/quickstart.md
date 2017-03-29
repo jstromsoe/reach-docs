@@ -53,7 +53,7 @@ After connecting to the network hosted by reach, open a web browser on your smar
 
 * Type either **http://reach.local** or **http://192.168.42.1** in the address bar and you will see ReachView Updater.
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_main.png" style="width: 350px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_updater_main.png" style="width: 350px;"></div><br>
 
 !!! note
     If your interface looks different, you need to reflash Reach device with v2.3 image by following [this guide](common/reachview/firmware-reflashing).  
@@ -61,11 +61,11 @@ You only need to do this if your device was purchased before 1 March 2017.
 
 * Press plus button and enter your Wi-Fi network name, security type and password. Press Save button
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_wifi.png" style="width: 350px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_updater_wifi.png" style="width: 350px;"></div><br>
 
 * Press on your added network and click Connect. 
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_wifi_connect.png" style="width: 600px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_updater_wifi_connect.png" style="width: 600px;"></div><br>
 
 * After that Reach device will attempt to connect your Wi-Fi network.
 
@@ -86,7 +86,7 @@ For this you can use:
 
 * ["**Zenmap**"](https://nmap.org/zenmap/) on Windows. 
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/fing.png" style="width: 500px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/fing.png" style="width: 500px;"></div><br>
 
 * Reach will show up as "**Murata Manufacturing**" device in these apps.
 
@@ -96,13 +96,13 @@ Read more on resolving IP addresses in the [ReachView section](common/reachview/
 
 * After that you will see ReachView Updater again which will install latest updates.
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_updater_finish.png" style="width: 350px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_updater_finish.png" style="width: 350px;"></div><br>
 
 * Press **Reboot and go to the app!** button. Wait while device reboots.
 
 * In about a minute refresh the page with ReachView app.
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_loading.png" style="width: 800px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_loading.png" style="width: 800px;"></div><br>
 
 
 ## Working with ReachView app
@@ -110,7 +110,7 @@ Read more on resolving IP addresses in the [ReachView section](common/reachview/
 
 ### Interface walkthrough
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_status_menu.png" style="width: 800px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_status_menu.png" style="width: 800px;"></div><br>
 
 ReachView menu consists of 9 tabs, but we only need three of them to start work:
 
@@ -128,7 +128,7 @@ ReachView menu consists of 9 tabs, but we only need three of them to start work:
 
 * Wait until base averages it's position in Base coordinates box.
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_base_mode_menu.png" style="width: 1200px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_base_mode_menu.png" style="width: 1200px;"></div><br>
 
 By default, base output stream will be available on a **TCP port 9000**.
 
@@ -139,7 +139,7 @@ By default, base output stream will be available on a **TCP port 9000**.
 
 * Navigate to **Correction input** tab. 
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_correction_input_tab.png" style="width: 800px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_correction_input_tab.png" style="width: 800px;"></div><br>
 
 * Choose TCP correction mode.
 
@@ -151,7 +151,7 @@ By default, base output stream will be available on a **TCP port 9000**.
 
 * Choose correction input **Format**. Default one is **RTCM3**. 
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_correction_input_tcp.png" style="width: 800px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_correction_input_tcp.png" style="width: 800px;"></div><br>
 
 * Save settings by pushing **Apply** button.
 
@@ -160,7 +160,7 @@ By default, base output stream will be available on a **TCP port 9000**.
 
 * Go to **Status** tab of the app on the rover device.
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_status_menu_correction.png" style="width: 800px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_status_menu_correction.png" style="width: 800px;"></div><br>
 
 You can see a bar chart with satellite levels, RTK parameters, positioning mode and solution status, current coordinates of rover and base in LLH format, velocity and map. In this quick tutorial, positioning mode is set to "Kinematic" which is the main RTK mode.
 
@@ -177,7 +177,7 @@ You can see a bar chart with satellite levels, RTK parameters, positioning mode 
 
 * If everything has been set up correctly and base and rover have good sky visibility, you should see **Solution status** change to **Fix** in a few minutes. **Fix** means that positioning is relative to the base and the integer ambiguity is resolved.
 
-<div style="text-align: center;"><img src="../img/reachrs/quickstart/reach_view_status_menu_fix.png" style="width: 800px;"></div><br>
+<div style="text-align: center;"><img src="../img/reach/quickstart/reach_view_status_menu_fix.png" style="width: 800px;"></div><br>
 
 * Now you can see <font color="green"> green </font> points on the map below. <font color="orange"> Orange </font> points show **Float** solution. <font color="red"> Red </font> - **Single** solution.
 

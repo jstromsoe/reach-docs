@@ -1,4 +1,4 @@
-<div style="text-align: center;"><img src="../img/reach/Reach_400x400-400x380.png" style="width: 350px;"></div><br>
+<div style="text-align: center;"><img src="img/reach/Reach_400x400-400x380.png" style="width: 350px;"></div><br>
 
 ### Reach RTK kit
 
