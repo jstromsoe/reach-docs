@@ -44,19 +44,31 @@ Connect Reach's upper DF13 port with Navio's **UART** port.
 !!! note
     The serial connection is used to accept base corrections and send solution at the same time.
 
-Start with **"reach_kinematic_default.conf"** configuration file. For both **Input source for base corrections** and **Solution output**(either 1 or 2) do the following:
+Start with configuration base correction input:
 
+* Select **Correction input** tab
 * Select **Serial**
-* Choose **UART** as the serial device
+* Choose **UART** as the device
 * Choose the desired baud rate(38400 for default)
 * Choose **RTCM3** as base corrections format
-* Choose **ERB** as solution output format
+* Hit **Apply** button to save settings
 
-**ERB** is a custom protocol, used to send location data to the autopilot.
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-base-correction-input.png" style="width: 100%;"></div>
 
-To load these settings, hit the **Save** button at the top, then agree to load the configuration onto Reach.
+Now configure position output:
 
-<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-settings.png" style="width: 350px;"></div>
+* Select **Position output** tab
+* Select **Serial**
+* Choose **UART** as the device
+* Choose the desired baud rate(38400 for default)
+* Choose **ERB** as position output format
+* Hit **Apply** button button to save settings
+
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-position-output.png" style="width: 100%;"></div>
+
+!!! note
+	**ERB** is a custom protocol, used to send location data to the autopilot.
+
 
 ### Setting up a correction link
 
@@ -115,22 +127,32 @@ Finally, set **GPS_INJECT_TO** parameter to **"1"**. **"1"** here stands for the
 
 To enable and configure GPS inject options in Mission planner press **"ctrl+F"** button combination. This will open a window with advanced GCS settings. Click **Inject GPS** button on the right.
 
-<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-settings.png" style="width: 500px;"></div>
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-settings.png" style="width: 70%;"></div>
 
 In the new window, choose parameters for base connection. Reach in base mode supports TCP and serial modes. For the sake of this example, **let's assume base corrections are coming from another Reach in base TCP server mode**. This is a setup we usually use in our test flights.
 
+Let's configure our Reach device:
+
+* Open **Base mode** tab on Reach device
+* Choose TCP in Correction output options
+* Set **Server** in Role field
+* Set 9000 as Port
+* Hit **Apply** button button to save settings
+
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-base-mode.png" style="width: 100%;"></div>
+
 In order to connect, choose TCP client mode in Mission Planner.
 
-<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-connection-type.png" style="width: 500px;"></div>
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-connection-type-new.png" style="width: 80%;"></div>
 
 Enter Base Reach's IP address.
 
-<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-ip.png" style="width: 500px;"></div>
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-ip-new.png" style="width: 60%;"></div>
 
 And port the server port number.
 
-<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-port.png" style="width: 500px;"></div>
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-port-new.png" style="width: 60%;"></div>
 
 Finally, check the corrections are coming in.
 
-<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-connected.png" style="width: 500px;"></div>
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-inject-connected-new.png" style="width: 70%;"></div>
