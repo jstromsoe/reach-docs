@@ -17,6 +17,8 @@ ERB support is included to ArduPilot starting with the following versions:
 
 ## Recommended setup
 
+<div style="text-align: center;"><img src="../img/reach/ardupilot-integration/reach-ardupilot-scheme.jpg" style="width: 800px;"></div>
+
 The setup we recommend goes as follows:
 
 * Navio or Pixhawk with the ArduPilot firmware (not less version 3.4.0 for ArduCopter, 3.6.0 for ArduPlane and 3.0.1 for ArduRover). It's preferable to use the last stable version
@@ -26,6 +28,9 @@ The setup we recommend goes as follows:
 * Rover Reach unit is mounted on a drone and connected to Navio or Pixhawk via the 6P-to-6P wire. This connection type will solve three problems at once: power Reach, allow ArduPilot board to pass base corrections and allow Reach to pass RTK solution back.
 
 The following guide will show how to configure both Navio or Pixhawk and Reach to work in this setup. If you wish alter to this workflow, it should be fairly easy to do so, as every part of the system is independent of others.
+
+
+
 
 ## Connecting Reach to Pixhawk
 
