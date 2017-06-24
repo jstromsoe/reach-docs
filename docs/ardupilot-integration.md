@@ -112,7 +112,7 @@ ArduPilot configuration will require setting some parameters via Mission planner
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-full-parameter-list.png" style="width: 800px;"></div>
 
-Start with settings **GPS-TYPE2** parameter to **"1"** - AUTO. This will enable the second GPS input.
+Start with settings **GPS_TYPE2** parameter to **"1"** - AUTO. This will enable the second GPS input.
 
 <div style="text-align: center;"><img src="../img/reach/ardupilot-integration/mp-gps-type2-parameter.png" style="width: 800px;"></div>
 
